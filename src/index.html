@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attorneyster - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-darkblue-900">
+    <header class="relative z-10">
+        <div class="container">
+            <div
+                class="top_header text-[14px] lg:text-[16px] xl:text-[22px]  flex items-center justify-between py-[14px]  2xl:py-[40px] xl:py-[30px] 1140lg:py-[20px] ">
+                <div class="menu_icon flex md:hidden">
+                    <button class="border-0 bg-transparent p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                </div>
+                <div class="nav_logo">
+                    <a href="#" class="">
+                        <h1>
+                            <img src="assets/images/logo.svg" alt=""
+                                class="max-h-[30px] sm:max-h-[40px] xl:max-h-[50px]">
+                        </h1>
+                    </a>
+                </div>
+
+                <div class="flex item-center w-[20px] md:w-auto">
+                    <a href="#" class="header_cart text-white flex items-center">
+                        <svg class="h-[18px] w-[18px] xl:w-[25px] xl:h-[25px] md:mr-[10px]" width="33" height="34"
+                            viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.59373 33L5.02844 9H27.8524L31.2871 33H1.59373Z" stroke="currentColor"
+                                stroke-width="2" />
+                            <mask id="path-2-inside-1_2_5140" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.4405 0C12.3862 0 9.09961 3.28664 9.09961 7.34092V10.0456H23.7814V7.34091C23.7814 3.28664 20.4948 0 16.4405 0Z" />
+                            </mask>
+                            <path
+                                d="M9.09961 10.0456H7.09961V12.0456H9.09961V10.0456ZM23.7814 10.0456V12.0456H25.7814V10.0456H23.7814ZM11.0996 7.34092C11.0996 4.39121 13.4908 2 16.4405 2V-2C11.2817 -2 7.09961 2.18208 7.09961 7.34092H11.0996ZM11.0996 10.0456V7.34092H7.09961V10.0456H11.0996ZM9.09961 12.0456H23.7814V8.04561H9.09961V12.0456ZM21.7814 7.34091V10.0456H25.7814V7.34091H21.7814ZM16.4405 2C19.3902 2 21.7814 4.39121 21.7814 7.34091H25.7814C25.7814 2.18207 21.5994 -2 16.4405 -2V2Z"
+                                fill="currentColor" mask="url(#path-2-inside-1_2_5140)" />
+                        </svg>
+
+                        <p class="hidden md:block text-[14px] md:text-[16px] xl:text-[22px] ">Cart(0)</p>
+                    </a>
+                    <a href="#"
+                        class="header_consult_btn hidden md:block text-white py-[16px] px-[25px] xl:py-[28px] xl:px-[45px] 1140lg:py-[20px] 1140lg:px-[35px] ms-[20px] md:ms-[28px] 1140lg:ms-[47px] bg-white bg-opacity-[0.1] transition duration-300 hover:bg-opacity-[1] hover:text-darkblue-900">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="middle_header [&.show]:left-0 fixed md:static top-0 left-[-200%] w-full max-w-[400px] md:max-w-full text-[14px] md:text-[16px] xl:text-[22px] md:border-y border-[#4E555F] transition-all duration-300 z-[9999]">
+                <div class="nav_close text-highLight md:hidden text-right bg-darkblue-600 border-b border-highLight">
+                    <button class="border-0 bg-transparent border-l border-highLight p-[10px]">
+                        <svg class="h-[15px] w-[15px]" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                            viewBox="0 0 329.269 329" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <nav
+                    class="main_nav h-[100vh] md:h-auto bg-darkblue-600 md:bg-transparent md:flex items-center justify-between md:py-[12px] 1140lg:py-[22px] xl:py-[32px] p-[20px] md:p-0">
+                    <ul
+                        class="md:flex items-center text-white h-[calc(100vh-133px)] md:h-auto overflow-y-auto md:overflow-y-hidden">
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="#"
+                                class="transition duration-300 hover:text-highLight">Home</a></li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="#"
+                                class="transition duration-300 hover:text-highLight">About Us</a></li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0">
+                            <div class="dropdown relative">
+                                <div
+                                    class="dropdown_toggle flex items-center transition duration-300 hover:text-highLight">
+                                    Pages
+                                    <svg class="ms-[10px]" width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.21973 1L6.21973 6L11.2197 1" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <ul
+                                    class="hidden py-[5px] dropdown_menu md:absolute left-0 min-w-full text-[20px] text-nowrap md:bg-darkblue-700 rounded-[5px] md:border border-darkblue-700 leading-none">
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="#">page 1</a>
+                                    </li>
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="#">page 2</a>
+                                    </li>
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="#">page 3</a>
+                                    </li>
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="#">page 444</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="#"
+                                class="transition duration-300 hover:text-highLight">Contact Us</a></li>
+                    </ul>
+
+                    <ul
+                        class="call_mail flex items-center pt-[10px] mt-[10px] md:mt-0 md:pt-0 border-t border-highLight md:border-0">
+
+                        <li class="me-[20px] lg:me-[46px] last:me-0">
+                            <a href="#"
+                                class="flex items-center [&:hover_.iconCircle]:bg-highLight [&:hover_.iconCircle]:text-darkblue-900">
+                                <div
+                                    class="iconCircle text-highLight h-[36px] w-[36px] 1140lg:h-[52px] xl:h-[62px] 1140lg:w-[52px] xl:w-[62px] rounded-full border border-highLight flex items-center justify-center transition duration-300">
+                                    <svg class="w-1/3" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.1809 12.8312C16.9828 12.6202 16.2834 11.9964 14.9978 11.171C13.7026 10.3385 12.7475 9.81934 12.4735 9.69829C12.4494 9.68758 12.4228 9.68365 12.3966 9.68692C12.3704 9.6902 12.3455 9.70056 12.3248 9.71688C11.8834 10.0611 11.1404 10.6933 11.1006 10.7274C10.8433 10.9479 10.8433 10.9479 10.6327 10.8792C10.2623 10.7578 9.11176 10.1468 8.10919 9.14198C7.10662 8.13714 6.46417 6.95812 6.34273 6.58814C6.27329 6.37715 6.27329 6.37715 6.49452 6.11987C6.52868 6.08003 7.16126 5.33702 7.50544 4.89608C7.52177 4.87531 7.53212 4.85049 7.5354 4.82428C7.53868 4.79807 7.53475 4.77147 7.52404 4.74732C7.40299 4.47296 6.88386 3.51821 6.0513 2.22308C5.2248 0.937808 4.60171 0.238443 4.39072 0.0403585C4.37136 0.0220881 4.34743 0.00937816 4.32145 0.00356797C4.29547 -0.00224222 4.2684 -0.000937497 4.2431 0.00734453C3.50558 0.260788 2.79399 0.584178 2.11805 0.973099C1.46551 1.35243 0.847733 1.78862 0.271904 2.27658C0.251803 2.29367 0.236733 2.31591 0.228309 2.34091C0.219886 2.36591 0.218428 2.39274 0.22409 2.41851C0.3034 2.78811 0.682495 4.33104 1.85887 6.46823C3.05914 8.64943 3.89095 9.76697 5.65361 11.5235C7.41627 13.2801 8.56911 14.162 10.7526 15.3623C12.8898 16.5386 14.4335 16.9181 14.8024 16.9967C14.8282 17.0023 14.855 17.0008 14.8801 16.9924C14.9052 16.984 14.9275 16.9689 14.9447 16.9488C15.4325 16.373 15.8686 15.7553 16.2478 15.1027C16.6366 14.4267 16.96 13.7152 17.2135 12.9777C17.2216 12.9526 17.2229 12.9258 17.2172 12.9C17.2114 12.8742 17.1989 12.8505 17.1809 12.8312Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                <div class="ml-[12px] hidden md:block">
+                                    <p
+                                        class="leading-none text-highLight text-[14px] xl:text-[18px] 1140lg:text-[16px] font-medium">
+                                        Call Us On:</p>
+                                    <p class="leading-none mt-[4px] text-[14px] 1140lg:text-[20px] text-white">
+                                        911-987654321</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="me-[20px] lg:me-[46px] last:me-0">
+                            <a href="#"
+                                class="flex items-center [&:hover_.iconCircle]:bg-highLight [&:hover_.iconCircle]:text-darkblue-900">
+                                <div
+                                    class="iconCircle text-highLight h-[36px] w-[36px] 1140lg:h-[52px] xl:h-[62px] 1140lg:w-[52px] xl:w-[62px] rounded-full border border-highLight flex items-center justify-center transition duration-300">
+                                    <svg class="w-1/3" width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5778 0.799805H0.86356C0.693064 0.799805 0.529551 0.868766 0.408992 0.991517C0.288432 1.11427 0.220703 1.28075 0.220703 1.45435V14.5453C0.220703 14.7189 0.288432 14.8853 0.408992 15.0081C0.529551 15.1308 0.693064 15.1998 0.86356 15.1998H17.5778C17.7483 15.1998 17.9119 15.1308 18.0324 15.0081C18.153 14.8853 18.2207 14.7189 18.2207 14.5453V1.45435C18.2207 1.28075 18.153 1.11427 18.0324 0.991517C17.9119 0.868766 17.7483 0.799805 17.5778 0.799805ZM9.61526 9.17103C9.50243 9.26033 9.36361 9.30881 9.2207 9.30881C9.0778 9.30881 8.93897 9.26033 8.82615 9.17103L2.53298 4.18749L3.32209 3.15412L9.2207 7.82512L15.1193 3.15412L15.9084 4.18749L9.61526 9.17103Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                <div class="ml-[12px] hidden md:block">
+                                    <p
+                                        class="leading-none text-highLight text-[14px] xl:text-[18px] 1140lg:text-[16px] font-medium">
+                                        Email us:</p>
+                                    <p class="leading-none mt-[4px] text-[14px] 1140lg:text-[20px] text-white">
+                                        yourmail@mail.com</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="black_layer hidden fixed top-0 left-0 h-[100vh] w-[100vw] bg-darkblue-900 opacity-80 z-10"></div>
+    </header>
+
+    <!-- <div class="wrapper"> -->
+    <div class="wrapper mt-[-58px] sm:mt-[-68px] md:mt-[-174px] 1140lg:mt-[-214px] xl:mt-[-272px] 2xl:mt-[-292px]">
+        <!-- START HERO SECTION HERE -->
+        <div class="w-full overflow-hidden relative">
+            <div
+                class="w-full py-[20px] md:pb-0 md:pt-[10px] mt-[58px] sm:mt-[68px] md:mt-[174px] 1140lg:mt-[214px] xl:mt-[272px] 2xl:mt-[292px]">
+                <div class="container">
+                    <div class="flex flex-wrap items-center justify-center md:justify-between">
+                        <div
+                            class="text-center md:text-left max-w-full sm:max-w-[575px] md:max-w-[58%] lg:max-w-[50%] 2xl:max-w-[45%] w-full">
+                            <div class="m-auto md:ml-0 max-w-[94px] h-[44px]">
+                                <img src="assets/images/pattern.png" alt="Pattern" class="w-full h-full object-cover">
+                            </div>
+                            <h2 class="text-white my-[10px] 1140lg:my-[13px] ">Deeper Understanding
+                                Better Solutions</h2>
+                            <p class="text-highLight xl:text-[22px]">
+                                It is a long established fact that a reader will be distracted by
+                                the readable content of a looking at its layout.
+                            </p>
+                            <button
+                                class="btn btn_highLight mt-[14px] 1140lg:mt-[22px] bg-highLight max-w-[160px] lg:max-w-[200px] xl:max-w-[285px] w-full">Get
+                                In Touch</button>
+                        </div>
+
+                        <div class="hidden md:block md:max-w-[42%] lg:max-w-[50%] 2xl:max-w-[54.7%] w-full">
+                            <div class="img_box relative h-full w-full pb-[50vw] lg:pb-[45vw]">
+                                <img src="assets/images/hero_main_img.png" alt="Hero main Image"
+                                    class="absolute top-0 left-0 h-full w-full object-scale-down object-bottom">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img_box absolute top-0 left-0 h-full w-full opacity-20 z-[-1]">
+                <img src="assets/images/hero_bg_img.png" alt="Hero Background"
+                    class="absolute top-0 left-0 h-full w-full object-cover">
+            </div>
+        </div>
+        <!--  END HERO SECTION HERE  -->
+
+        <!-- START HOME ABOUT SECTION HERE -->
+        <section
+            class="home_about py-[90px] sm:py-[110px] md:py-[132px] lg:py-[152px] xl:py-[172px] 2xl:py-[192px] bg-darkblue-700">
+            <div class="container">
+                <div class="md:flex lg:items-center justify-between">
+                    <div class="w-full max-w-full md:max-w-[33.2%] sm:flex md:flex-col justify-between lg:block">
+                        <div
+                            class="sm:max-w-[calc(50%-12px)] md:max-w-full md:h-[calc(50%-12px)] lg:h-auto pb-[63%] sm:pb-[40%] md:pb-0 lg:pb-[63%] w-full mb-[24px] sm:mb-0 lg:mb-[36px] last:mb-0 relative">
+                            <img src="assets/images/home_about_1.png" alt="About 1" class="img_cover">
+                        </div>
+
+                        <div
+                            class="sm:max-w-[calc(50%-12px)] md:max-w-full md:h-[calc(50%-12px)] lg:h-auto pb-[63%] sm:pb-[40%] md:pb-0 lg:pb-[63%] w-full mb-[24px] sm:mb-0 lg:mb-[36px] last:mb-0 relative">
+                            <img src="assets/images/home_about_2.png" alt="About 2" class="img_cover">
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-[550px] md:max-w-full mx-auto md:ml-0 md:ps-[20px] 1140lg::ps-[30px] 2xl:ps-[40px] 3xl:ps-[50px] flex-1 mt-[30px] md:mt-0">
+                        <div
+                            class="flex flex-col-reverse md:block md:mb-[12px] lg::mb-[20px] 2xl:mb-[36px] 3xl:mb-[48px]">
+                            <h3 class="text-white text-center md:text-left my-[12px] md:my-0">The Simple Choice<br />for
+                                Complex Litigation</h3>
+                            <div class="mx-auto md:mx-0 md:mt-[4px] lg:mt-[8px] max-w-[94px] h-[44px]">
+                                <img src="assets/images/pattern.png" alt="Pattern" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <p class="text-offwhite line-clamp-4">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have su
+                                alteration in some form, by injected humour, oir randomised workds which don't look even
+                                slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                                sure there isn't anything.
+                            </p>
+                            <div
+                                class="flex justify-center md:justify-start items-center mt-[12px] 1140lg:mt-[20px] 3xl:mt-[30px]">
+                                <div
+                                    class="me-[16px] h-[30px] sm:h-[40px] md:h-[50px] 1140lg:h-[60px] 2xl:h-[70px] 3xl:h-[86px] w-[30px] sm:w-[40px] md:w-[50px] 1140lg:w-[60px] 2xl:w-[70px] 3xl:w-[86px] rounded-full overflow-hidden relative bg-darkblue-900">
+                                    <img src="assets/images/owner_image.png" alt="Peeter Park" class="img_cover">
+                                </div>
+                                <h3
+                                    class="font-luxurious text-[20px] md:text-[26px] lg:text-[30px] 2xl:text-[36px] 3xl:text-[43px] text-white font-normal">
+                                    Peeter Park</h3>
+                            </div>
+
+                            <div
+                                class="flex justify-between sm:justify-start sm:mt-[20px] md:mt-[10px] lg::mt-[30px] 2xl:mt-[50px] 3xl:mt-[62px]">
+                                <div
+                                    class="flex items-center py-[4px] sm:py-[8px] md:py-[15px] 1140lg:py-[30px] px-[10px] sm:px-[20px] md:px-[14px] lg:px-[24px]
+                                1140lg:px-[44px] bg-[#3B434E] max-w-[calc(50%-8px)] sm:max-w-[300px] sm:me-[20px] lg:me-[36px] last:me-0 mt-[10px] sm:mt-0 w-full lg:w-auto">
+                                    <div
+                                        class="h-[36px] lg:h-[56px] max-w-[50px] sm:max-w-[60px] lg:max-w-max w-full me-[6px] sm:me-[16px]">
+                                        <svg class="w-[24px] mx-auto sm:w-full h-full" width="58" height="57"
+                                            viewBox="0 0 58 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M51.9306 5.36692L48.0858 13.8522C47.9095 14.2412 47.8184 14.6633 47.8184 15.0904V52.9391C47.8184 54.0437 48.7138 54.9391 49.8184 54.9391H54.9537C56.0583 54.9391 56.9537 54.0437 56.9537 52.9391V15.0904C56.9537 14.6633 56.8625 14.2412 56.6863 13.8522L52.8415 5.36692C52.6641 4.9754 52.108 4.9754 51.9306 5.36692Z"
+                                                stroke="#D1B06B" stroke-width="2" />
+                                            <path d="M47.8184 15.0903H52.957H56.9537" stroke="#D1B06B"
+                                                stroke-width="2" />
+                                            <rect x="6.83398" y="25.144" width="28.0038" height="2.33365" rx="1.16683"
+                                                fill="#D1B06B" />
+                                            <rect x="8.16797" y="8.97559" width="10.1678" height="7.83413" rx="1.5"
+                                                stroke="#D1B06B" stroke-width="2" />
+                                            <rect x="6.83398" y="36.8125" width="28.0038" height="2.33365" rx="1.16683"
+                                                fill="#D1B06B" />
+                                            <rect x="6.83398" y="42.6465" width="17.5024" height="2.33365" rx="1.16683"
+                                                fill="#D1B06B" />
+                                            <rect x="6.83398" y="30.9785" width="28.0038" height="2.33365" rx="1.16683"
+                                                fill="#D1B06B" />
+                                            <path d="M47.8184 49.8306H56.9537" stroke="#D1B06B" stroke-width="2" />
+                                            <path
+                                                d="M1 8.80762V48.1925C1 52.0585 4.13401 55.1925 8 55.1925H34.2603C38.1263 55.1925 41.2603 52.0585 41.2603 48.1925V16.5358C41.2603 14.5484 40.4154 12.6546 38.9365 11.3269L30.3278 3.59866C29.0432 2.44548 27.3778 1.80762 25.6516 1.80762H8C4.13401 1.80762 1 4.94162 1 8.80762Z"
+                                                stroke="#D1B06B" stroke-width="2" />
+                                            <path
+                                                d="M25.9805 2.0249V11.6966C25.9805 13.9058 27.7713 15.6966 29.9805 15.6966H40.2898"
+                                                stroke="#D1B06B" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+
+                                    </div>
+                                    <p class="text-white sm:font-medium">95%<br />Case Success</p>
+                                </div>
+
+                                <div
+                                    class="flex items-center py-[4px] sm:py-[8px] md:py-[15px] 1140lg:py-[30px] px-[10px] sm:px-[20px] md:px-[14px] lg:px-[24px]
+                                1140lg:px-[44px] bg-highLight max-w-[calc(50%-8px)] sm:max-w-[300px] sm:me-[20px] lg:me-[36px] last:me-0 mt-[10px] sm:mt-0 w-full lg:w-auto">
+                                    <div
+                                        class="h-[36px] lg:h-[56px] w-full max-w-[50px] sm:max-w-[60px] lg:max-w-[80px] me-[6px] sm:me-[16px] text-white bg-darkblue-900 rounded flex items-center justify-center">
+                                        <h6 class="font-Outfit">35+</h6>
+                                    </div>
+                                    <p class=" font-medium">Years
+                                        Experiance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  END HOME ABOUT SECTION HERE  -->
+
+        <!-- START PRATICE AERIA SECTION HERE -->
+        <section
+            class="py-[50px] md:py-[70px] lg:py-[90px] 1140lg:py-[100px] xl:py-[120px] 2xl:py-[156px] 3xl:py-[186px]">
+            <div class="container">
+                <div class="text-center md:text-left md:flex flex-wrap items-center">
+                    <div
+                        class="flex flex-col-reverse md:block md:pe-[40px] lg:pe-[60px] xl:pe-[90px] 2xl:pxe[120px] 3xl:pe-[146px] relative before:h-[80%] before:w-[1px]
+                     before:right-0 before:top-[50%] before:translate-y-[-50%] before:hidden md:before:block before:bg-[#3A4553] before:absolute ">
+                        <h3 class="text-white my-[14px] md:my-0">Explore <br class="hidden md:block" />Our Practice
+                            Arease</h3>
+                        <div class="mx-auto md:mx-0 md:mt-[4px] lg:mt-[8px] max-w-[94px] h-[44px]">
+                            <img src="assets/images/pattern.png" alt="Pattern" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+
+
+                    <div class="flex-1 md:ps-[40px] lg:ps-[60px] xl:ps-[90px] 2xl:ps-[120px] 3xl:ps-[146px]">
+                        <p class="text-offwhite">
+                            There are <span class="text-highLight">many variations of passages</span> of Lorem Ipsum
+                            available, but the majority have su alteration in some form, by injected humour, oir <span
+                                class="text-highLight">randomised workds</span> which don't look even slightly
+                            believable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap sm:mx-[-8px] lg:mx-[-14px] mt-[16px] lg:mt-[36px]">
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">
+                                Business Law
+                            </h5>
+                            <p class="line-clamp-3 text-offwhite">
+                                There are many variations of passages
+                                of Lorem Ipsum available, but majority
+                                going to use a passage.
+                            </p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="59" height="51" viewBox="0 0 59 51" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M42.2705 21.0328V32.459M17.0246 21.0328L17.0246 32.459M3 27H55M8 49.5H51C54.3137 49.5 57 46.8137 57 43.5V14.5C57 11.1863 54.3137 8.5 51 8.5H8C4.68629 8.5 2 11.1863 2 14.5V43.5C2 46.8137 4.68629 49.5 8 49.5ZM40 8.5V4.5C40 2.84315 38.6569 1.5 37 1.5H21C19.3431 1.5 18 2.84315 18 4.5V8.5H40Z"
+                                        stroke="#D1B06B" stroke-width="3" />
+                                </svg>
+
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">Construction Law</h5>
+                            <p class="line-clamp-3 text-offwhite">There are many variations of passages of Lorem Ipsum
+                                available, but majority going to use a passage.</p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="64" height="55" viewBox="0 0 64 55" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.5 5C1.5 3.067 3.067 1.5 5 1.5H27.8358C29.7688 1.5 31.3358 3.067 31.3358 5V53.5H5C3.067 53.5 1.5 51.933 1.5 50V5Z"
+                                        stroke="#BB9F64" stroke-width="3" />
+                                    <path
+                                        d="M31.873 27.9849C31.873 26.0519 33.44 24.4849 35.373 24.4849H58.2089C60.1419 24.4849 61.7089 26.0519 61.7089 27.9849V49.9998C61.7089 51.9328 60.1419 53.4998 58.2089 53.4998H31.873V27.9849Z"
+                                        stroke="#BB9F64" stroke-width="3" />
+                                    <path
+                                        d="M6.56738 10.8506C6.56738 10.2983 7.0151 9.85059 7.56738 9.85059H12.9554C13.5077 9.85059 13.9554 10.2983 13.9554 10.8506V12.9551C13.9554 13.5073 13.5077 13.9551 12.9554 13.9551H7.56738C7.0151 13.9551 6.56738 13.5073 6.56738 12.9551V10.8506Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M36.9405 32.1939C36.9405 31.6416 37.3882 31.1939 37.9405 31.1939H43.3286C43.8809 31.1939 44.3286 31.6416 44.3286 32.1939V34.2983C44.3286 34.8506 43.8809 35.2983 43.3286 35.2983H37.9405C37.3882 35.2983 36.9405 34.8506 36.9405 34.2983V32.1939Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M6.56738 21.5222C6.56738 20.9699 7.0151 20.5222 7.56738 20.5222H12.9554C13.5077 20.5222 13.9554 20.9699 13.9554 21.5222V23.6267C13.9554 24.179 13.5077 24.6267 12.9554 24.6267H7.56738C7.0151 24.6267 6.56738 24.179 6.56738 23.6267V21.5222Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M36.9405 42.0446C36.9405 41.4923 37.3882 41.0446 37.9405 41.0446H43.3286C43.8809 41.0446 44.3286 41.4923 44.3286 42.0446V44.1491C44.3286 44.7014 43.8809 45.1491 43.3286 45.1491H37.9405C37.3882 45.1491 36.9405 44.7014 36.9405 44.1491V42.0446Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M6.56738 32.1939C6.56738 31.6416 7.0151 31.1939 7.56738 31.1939H12.9554C13.5077 31.1939 13.9554 31.6416 13.9554 32.1939V34.2983C13.9554 34.8506 13.5077 35.2983 12.9554 35.2983H7.56738C7.0151 35.2983 6.56738 34.8506 6.56738 34.2983V32.1939Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M6.56738 42.8655C6.56738 42.3132 7.0151 41.8655 7.56738 41.8655H12.9554C13.5077 41.8655 13.9554 42.3132 13.9554 42.8655V44.97C13.9554 45.5223 13.5077 45.97 12.9554 45.97H7.56738C7.0151 45.97 6.56738 45.5223 6.56738 44.97V42.8655Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M18.8808 10.8506C18.8808 10.2983 19.3285 9.85059 19.8808 9.85059H25.2689C25.8212 9.85059 26.2689 10.2983 26.2689 10.8506V12.9551C26.2689 13.5073 25.8212 13.9551 25.2689 13.9551H19.8808C19.3285 13.9551 18.8808 13.5073 18.8808 12.9551V10.8506Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M49.2539 32.1939C49.2539 31.6416 49.7017 31.1939 50.2539 31.1939H55.642C56.1943 31.1939 56.642 31.6416 56.642 32.1939V34.2983C56.642 34.8506 56.1943 35.2983 55.642 35.2983H50.2539C49.7017 35.2983 49.2539 34.8506 49.2539 34.2983V32.1939Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M18.8808 21.5222C18.8808 20.9699 19.3285 20.5222 19.8808 20.5222H25.2689C25.8212 20.5222 26.2689 20.9699 26.2689 21.5222V23.6267C26.2689 24.179 25.8212 24.6267 25.2689 24.6267H19.8808C19.3285 24.6267 18.8808 24.179 18.8808 23.6267V21.5222Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M49.2539 42.0446C49.2539 41.4923 49.7017 41.0446 50.2539 41.0446H55.642C56.1943 41.0446 56.642 41.4923 56.642 42.0446V44.1491C56.642 44.7014 56.1943 45.1491 55.642 45.1491H50.2539C49.7017 45.1491 49.2539 44.7014 49.2539 44.1491V42.0446Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M18.8808 32.1939C18.8808 31.6416 19.3285 31.1939 19.8808 31.1939H25.2689C25.8212 31.1939 26.2689 31.6416 26.2689 32.1939V34.2983C26.2689 34.8506 25.8212 35.2983 25.2689 35.2983H19.8808C19.3285 35.2983 18.8808 34.8506 18.8808 34.2983V32.1939Z"
+                                        fill="#BB9F64" />
+                                    <path
+                                        d="M18.8808 42.8655C18.8808 42.3132 19.3285 41.8655 19.8808 41.8655H25.2689C25.8212 41.8655 26.2689 42.3132 26.2689 42.8655V44.97C26.2689 45.5223 25.8212 45.97 25.2689 45.97H19.8808C19.3285 45.97 18.8808 45.5223 18.8808 44.97V42.8655Z"
+                                        fill="#BB9F64" />
+                                </svg>
+
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">Car Accident</h5>
+                            <p class="line-clamp-3 text-offwhite">There are many variations of passages of Lorem Ipsum
+                                available, but majority going to use a passage.</p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="70" height="47" viewBox="0 0 70 47" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="path-1-inside-1_2_4979" fill="white">
+                                        <rect width="42" height="41" rx="2" />
+                                    </mask>
+                                    <rect width="42" height="41" rx="2" stroke="#D1B06B" stroke-width="6"
+                                        mask="url(#path-1-inside-1_2_4979)" />
+                                    <mask id="path-2-inside-2_2_4979" fill="white">
+                                        <path
+                                            d="M39.0166 10.3657C39.0166 9.81344 39.4643 9.36572 40.0166 9.36572H57.5005C64.1279 9.36572 69.5005 14.7383 69.5005 21.3657V39.9786C69.5005 40.5309 69.0528 40.9786 68.5005 40.9786H40.0166C39.4643 40.9786 39.0166 40.5309 39.0166 39.9786V10.3657Z" />
+                                    </mask>
+                                    <path
+                                        d="M39.0166 10.3657C39.0166 9.81344 39.4643 9.36572 40.0166 9.36572H57.5005C64.1279 9.36572 69.5005 14.7383 69.5005 21.3657V39.9786C69.5005 40.5309 69.0528 40.9786 68.5005 40.9786H40.0166C39.4643 40.9786 39.0166 40.5309 39.0166 39.9786V10.3657Z"
+                                        stroke="#D1B06B" stroke-width="6" mask="url(#path-2-inside-2_2_4979)" />
+                                    <mask id="path-3-inside-3_2_4979" fill="white">
+                                        <path
+                                            d="M51.4355 9.36572H57.5001C64.1275 9.36572 69.5001 14.7383 69.5001 21.3657V24.1722C69.5001 24.7245 69.0524 25.1722 68.5001 25.1722H54.4355C52.7787 25.1722 51.4355 23.829 51.4355 22.1722V9.36572Z" />
+                                    </mask>
+                                    <path
+                                        d="M51.4355 9.36572H57.5001C64.1275 9.36572 69.5001 14.7383 69.5001 21.3657V24.1722C69.5001 24.7245 69.0524 25.1722 68.5001 25.1722H54.4355C52.7787 25.1722 51.4355 23.829 51.4355 22.1722V9.36572Z"
+                                        stroke="#D1B06B" stroke-width="6" mask="url(#path-3-inside-3_2_4979)" />
+                                    <circle cx="16.352" cy="39.2221" r="6.27778" fill="#1F2732" stroke="#D1B06B"
+                                        stroke-width="3" />
+                                    <circle cx="55.2407" cy="39.2221" r="6.27778" fill="#1F2732" stroke="#D1B06B"
+                                        stroke-width="3" />
+                                    <line x1="39.4814" y1="23.8706" x2="15.2592" y2="23.8706" stroke="#D1B06B"
+                                        stroke-width="3" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">Wrongful Death</h5>
+                            <p class="line-clamp-3 text-offwhite">There are many variations of passages of Lorem Ipsum
+                                available, but majority going to use a passage.</p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="59" height="67" viewBox="0 0 59 67" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.5 23.5C7.5 11.3497 17.3497 1.5 29.5 1.5C41.6503 1.5 51.5 11.3497 51.5 23.5V56.5H7.5V23.5Z"
+                                        stroke="#D1B06B" stroke-width="3" />
+                                    <path
+                                        d="M2.23223 57.2322C1.76063 57.7038 1.60896 58.2642 1.54999 58.7029C1.49965 59.0773 1.49982 59.5209 1.49998 59.9311C1.49999 59.9542 1.5 59.9772 1.5 60V62C1.5 62.0228 1.49999 62.0458 1.49998 62.0689C1.49982 62.4791 1.49965 62.9227 1.54999 63.2971C1.60896 63.7358 1.76063 64.2962 2.23223 64.7678C2.70383 65.2394 3.26421 65.391 3.70286 65.45C4.07729 65.5004 4.52088 65.5002 4.9311 65.5C4.95418 65.5 4.97715 65.5 5 65.5H54L54.0689 65.5C54.4791 65.5002 54.9227 65.5004 55.2971 65.45C55.7358 65.391 56.2962 65.2394 56.7678 64.7678C57.2394 64.2962 57.391 63.7358 57.45 63.2971C57.5004 62.9227 57.5002 62.4791 57.5 62.0689L57.5 62V60L57.5 59.9311C57.5002 59.5209 57.5004 59.0773 57.45 58.7029C57.391 58.2642 57.2394 57.7038 56.7678 57.2322C56.2962 56.7606 55.7358 56.609 55.2971 56.55C54.9227 56.4996 54.4791 56.4998 54.0689 56.5L54 56.5H5C4.97715 56.5 4.95418 56.5 4.93111 56.5C4.52088 56.4998 4.07729 56.4996 3.70286 56.55C3.26421 56.609 2.70383 56.7606 2.23223 57.2322Z"
+                                        stroke="#D1B06B" stroke-width="3" />
+                                    <path
+                                        d="M19.635 30.951V29.336H22.644C23.2447 29.336 23.7093 29.183 24.038 28.877C24.378 28.5597 24.548 28.1233 24.548 27.568C24.548 27.0693 24.3837 26.65 24.055 26.31C23.7263 25.97 23.2617 25.8 22.661 25.8H19.635V24.1H22.746C23.494 24.1 24.1513 24.253 24.718 24.559C25.2847 24.8537 25.721 25.2617 26.027 25.783C26.3443 26.293 26.503 26.8767 26.503 27.534C26.503 28.2253 26.3443 28.826 26.027 29.336C25.721 29.846 25.2847 30.2427 24.718 30.526C24.1513 30.8093 23.494 30.951 22.746 30.951H19.635ZM18.292 36V24.1H20.247V36H18.292ZM24.82 36L20.655 30.832L22.474 30.169L27.285 36H24.82ZM28.7344 36V24.1H30.6894V36H28.7344ZM34.6096 31.512V29.812H37.5846C37.9926 29.812 38.3496 29.7327 38.6556 29.574C38.9729 29.404 39.2223 29.1717 39.4036 28.877C39.5849 28.571 39.6756 28.214 39.6756 27.806C39.6756 27.398 39.5849 27.0467 39.4036 26.752C39.2223 26.446 38.9729 26.2137 38.6556 26.055C38.3496 25.885 37.9926 25.8 37.5846 25.8H34.6096V24.1H37.6866C38.4346 24.1 39.1033 24.253 39.6926 24.559C40.2933 24.865 40.7636 25.2957 41.1036 25.851C41.4549 26.4063 41.6306 27.058 41.6306 27.806C41.6306 28.554 41.4549 29.2057 41.1036 29.761C40.7636 30.3163 40.2933 30.747 39.6926 31.053C39.1033 31.359 38.4346 31.512 37.6866 31.512H34.6096ZM33.2666 36V24.1H35.2216V36H33.2666Z"
+                                        fill="#D1B06B" />
+                                    <line x1="18.15" y1="40.85" x2="40.85" y2="40.85" stroke="#D1B06B"
+                                        stroke-width="2.3" stroke-linecap="round" />
+                                    <line x1="13.15" y1="46.85" x2="45.85" y2="46.85" stroke="#D1B06B"
+                                        stroke-width="2.3" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">Criminal Law</h5>
+                            <p class="line-clamp-3 text-offwhite">There are many variations of passages of Lorem Ipsum
+                                available, but majority going to use a passage.</p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="53" height="56" viewBox="0 0 53 56" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11.7778" cy="43.9001" r="10.2778" stroke="#D1B06B" stroke-width="3" />
+                                    <circle cx="41.2221" cy="20.3444" r="10.2778" stroke="#D1B06B" stroke-width="3" />
+                                    <rect x="8.48052" y="11.891" width="11.1643" height="6.22766" rx="3.11383"
+                                        transform="rotate(-44.3122 8.48052 11.891)" stroke="#D1B06B" stroke-width="2" />
+                                    <rect x="22.9344" y="1.41938" width="11.1643" height="6.22766" rx="3.11383"
+                                        transform="rotate(5.87562 22.9344 1.41938)" stroke="#D1B06B" stroke-width="2" />
+                                    <rect x="3.55053" y="28.8983" width="11.1643" height="6.22766" rx="3.11383"
+                                        transform="rotate(-77.3245 3.55053 28.8983)" stroke="#D1B06B"
+                                        stroke-width="2" />
+                                    <line x1="12.3026" y1="13.4132" x2="9.55707" y2="19.8193" stroke="#D1B06B"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="8.2172" y1="28.2331" x2="9.06618" y2="33.327" stroke="#D1B06B"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="24.0466" y1="5.09196" x2="17.7252" y2="6.89807" stroke="#D1B06B"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <line x1="35.1052" y1="10.7662" x2="31.6435" y2="6.43904" stroke="#D1B06B"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </svg>
+
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="w-full max-w-fullF sm:max-w-[calc(50%-16px)] md:max-w-[calc((100%/3)-16px)] lg:max-w-[calc((100%/3)-28px)] bg-darkblue-700 mt-[16px] lg:mt-[28px] sm:mx-[8px] lg:mx-[14px]   px-[14px] md:px-[20px] lg:px-[24px] 1140lg::px-[38px]  2xl:px-[50px] py-[18px] md:py-[24px] lg:py-[30px] 1140lg::py-[42px] 2xl:py-[58px] [&:hover_.lernMoreBtn]:bg-highLight [&:hover_.lernMoreBtn]:text-darkblue-900">
+                        <div>
+                            <h5 class="mb-[8px] line-clamp-1 text-white">Family Law</h5>
+                            <p class="line-clamp-3 text-offwhite">There are many variations of passages of Lorem Ipsum
+                                available, but majority going to use a passage.</p>
+                        </div>
+                        <div
+                            class="border-t border-[#3A4553] pt-[14px] lg:pt-[24px] xl:pt-[34px] mt-[14px] lg:mt-[24px] xl:mt-[34px] flex items-center">
+                            <div
+                                class="w-full max-w-[25px] md:max-w-[30px] lg:max-w-[35px] 1140lg:max-w-[45px] xl:max-w-[55px] h-[25px] md:h-[30px] lg:h-[35px] 1140lg:h-[45px] xl:h-[55px]">
+                                <svg class="w-full h-full" width="60" height="43" viewBox="0 0 60 43" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M55.147 37.1541C57.0033 37.1541 58.3568 35.2587 57.916 33.2997C56.3248 26.2416 50.4562 21.0002 43.4613 21.0002C36.4665 21.0002 30.5944 26.2415 29.0066 33.3035C28.5658 35.2624 29.9193 37.1541 31.7757 37.1541H55.147Z"
+                                        fill="#1F2732" stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                    <path
+                                        d="M28.2241 37.1541C30.0805 37.1541 31.434 35.2587 30.9931 33.2997C29.402 26.2416 23.5333 21.0002 16.5385 21.0002C9.5436 21.0002 3.6715 26.2415 2.0838 33.3035C1.64296 35.2624 2.99647 37.1541 4.85281 37.1541H28.2241Z"
+                                        fill="#1F2732" stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                    <path
+                                        d="M38.6557 41.4616C40.0308 41.4616 41.0334 40.0717 40.7069 38.6351C39.5282 33.4591 35.1811 29.6155 29.9997 29.6155C24.8183 29.6155 20.4686 33.4591 19.2925 38.6379C18.966 40.0744 19.9686 41.4616 21.3437 41.4616H38.6557Z"
+                                        fill="#1F2732" stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                    <path
+                                        d="M50.0384 9.15396C50.0384 13.0837 46.8527 16.2693 42.923 16.2693C38.9933 16.2693 35.8076 13.0837 35.8076 9.15396C35.8076 5.22424 38.9933 2.03857 42.923 2.03857C46.8527 2.03857 50.0384 5.22424 50.0384 9.15396Z"
+                                        stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                    <path
+                                        d="M24.1927 9.15396C24.1927 13.0837 21.007 16.2693 17.0773 16.2693C13.1476 16.2693 9.96191 13.0837 9.96191 9.15396C9.96191 5.22424 13.1476 2.03857 17.0773 2.03857C21.007 2.03857 24.1927 5.22424 24.1927 9.15396Z"
+                                        stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                    <path
+                                        d="M34.9612 21.0001C34.9612 23.7403 32.7398 25.9617 29.9996 25.9617C27.2594 25.9617 25.0381 23.7403 25.0381 21.0001C25.0381 18.2599 27.2594 16.0386 29.9996 16.0386C32.7398 16.0386 34.9612 18.2599 34.9612 21.0001Z"
+                                        stroke="#D1B06B" stroke-width="3" stroke-miterlimit="10" />
+                                </svg>
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <a href="#"
+                                    class="lernMoreBtn text-white font-medium py-[8px] md:py-[10px] lg:py-[12px] xl:py-[15px] px-[16px] md:px-[20px] lg:px-[28px] xl:px-[38px] bg-darkblue-900  transition duration-300  hover:!bg-white">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  END PRATICE AERIA SECTION HERE  -->
+
+        <!-- START BUSINESS TRACK SECTION HERE -->
+        <section class="py-[50px] md:py-[60px] lg:py-[80px] 1140lg:py-[100px] xl:py-[120px] 2xl:py-[140px] bg-white">
+            <div class="container">
+                <div class="heading text-center max-w-[750px] mx-auto">
+                    <div class="flex flex-col-reverse md:block">
+                        <h3 class="text-darkblue-900 mt-[10px] md:mt-0">If you're in trouble<br /> we can help.</h3>
+                        <div class="mx-auto md:mt-[4px] lg:mt-[8px] max-w-[94px] h-[44px]">
+                            <svg class="w-full h-full" width="96" height="44" viewBox="0 0 96 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#D1B06B" />
+                                <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#D1B06B" />
+                                <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#D1B06B" />
+                                <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#D1B06B" />
+                                <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B" />
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="mt-[18px] md:mt-[24px] lg:mt-[30px] 1140lg:mt-[36px] 2xl:mt-[46px] text-[#909090]">There
+                        are of Lorem Ipsum available, but the majority have su alteration in some form, by injected
+                        humour, oir which don't look even slightly believable.</p>
+                </div>
+
+                <!-- partner -->
+                <div
+                    class="mt-[28px] md:mt-[34px] 1140lg:mt-[42] 2xl:mt-[52px] pt-[20px] md:pt-[30px] 1140lg:pt-[45] 2xl:pt-[60px] border-t border-[#CBCBCB]">
+                    <div class="flex items-center justify-center">
+                        <div class="md:max-w-[60px] lg:max-w-[94px] h-[30px] lg:h-[44px] hidden md:block">
+                            <svg class="w-full h-full" width="96" height="44" viewBox="0 0 96 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#D1B06B" />
+                                <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#D1B06B" />
+                                <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#D1B06B" />
+                                <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#D1B06B" />
+                                <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B" />
+                            </svg>
+                        </div>
+                        <h3 class="text-darkblue-900 md:mx-[16px] lg:mx-[28px]">Meet The Partners</h3>
+                        <div class="md:max-w-[60px] lg:max-w-[94px] h-[30px] lg:h-[44px] hidden md:block">
+                            <svg class="w-full h-full" width="96" height="44" viewBox="0 0 96 44" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#D1B06B" />
+                                <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#D1B06B" />
+                                <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#D1B06B" />
+                                <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#D1B06B" />
+                                <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper partnerSwiper mt-[25px] lg:mt-[40px] xl:mt-[65px]">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_1.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_2.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_3.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_4.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_5.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                        <div class="swiper-slide w-full h-[105px] relative">
+                            <img src="assets/images/partners_1.svg" alt="" class="img_cover object-scale-down">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--  END BUSINESS TRACK SECTION HERE  -->
+
+        <!-- START HISTORY SECTION HERE  -->
+            <section class="py-[50px] md:py-[80px] lg:py-[110px] 1140lg:py-[140px] xl:py-[170px] 2xl:py-[200px] relative">
+                <div class="px-[20px] md:px-[30px] 3xl:px-0 3xl:container ">
+                    <div class="bg-darkblue-900 bg-opacity-85 py-[30px] md:py-[60px] lg:py-[80px] 1140lg:py-[100px] xl:py-[120px] 2xl:py-[144px] px-[20px] md:px-[38px]  1140lg:px-[58px] xl:px-[68px] 2xl:px-[78px] relative z-10 flex flex-wrap justify-between items-center">
+                        <div class="w-full md:max-w-[50%] pr-[20px] pb-[30px] md:pb-0 lg:pr-0 lg:max-w-[37%] 1140lg:max-w-[33%] 3xl:max-w-[28.9%]">
+                            <div class="mb-[30px] md:mb-[20px] lg:mb-[30px] xl:mb-[40px] 2xl:mb-[50px] flex flex-col-reverse md:block">
+                                <h3>We Are Top Lawyers <br class="hidden md:block"/> And History</h3>
+                                <div class="mb-[14px] md:mb-0 md:mt-[4px] lg:mt-[8px] max-w-[70px] md:max-w-[94px] h-[36px] md:h-[44px]">
+                                    <img src="assets/images/pattern.png" alt="Pattern" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="history_items mb-[20px] lg:mb-[30px] xl:mb-[40px] last:mb-0">
+                                    <h6><p class="font-medium text-highLight">1995 – Opening</p></h6>
+                                    <p class="mt-[8px] lg:mt-[12px]">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+                                </div>
+                                <div class="history_items mb-[20px] lg:mb-[30px] xl:mb-[40px] last:mb-0">
+                                    <h6><p class="font-medium text-highLight">2011 – Open Branch Office</p></h6>
+                                    <p class="mt-[8px] lg:mt-[12px]">There are many variations of passages of Lorem Ipsum available, but majority  going to use a passage.</p>
+                                </div>
+                                <div class="history_items mb-[20px] lg:mb-[30px] xl:mb-[40px] last:mb-0">
+                                    <h6><p class="font-medium text-highLight">2015 – 18000K Client’s</p></h6>
+                                    <p class="mt-[8px] lg:mt-[12px]">There are many variations of passages of Lorem Ipsum available, but majority going to use a passage.</p>
+                                </div>
+                                <div class="history_items mb-[20px] lg:mb-[30px] xl:mb-[40px] last:mb-0">
+                                    <h6><p class="font-medium text-highLight">2020– Best Law & Firm Awwards</p></h6>
+                                    <p class="mt-[8px] lg:mt-[12px]">There are many variations of passages of Lorem Ipsum available.</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="w-full h-full max-w-[20.6%] relative hidden lg:block">
+                            <div class="relative pb-[294%]">
+                                <picture> 
+                                    <source media="(max-width:768px)" srcset="assets/images/history_image_2.png">
+                                    <img src="assets/images/history_image_1.png" alt="Hero Back" class="img_cover">
+                                </picture>
+                            </div>
+                        </div> 
+                        <div class="w-full md:max-w-[50%] pt-[30px] md:pt-0 md:pl-[20px] lg:pl-0 lg:max-w-[36.7%] border-t md:border-t-0 md:border-s lg:border-none border-highLight">
+                            <div class="mb-[30px] md:mb-[20px] lg:mb-[30px] xl:mb-[40px] 2xl:mb-[50px] flex flex-col-reverse md:block">
+                                <h3>We Are Specialised <br class="hidden md:block"/>And Experienced</h3>
+                                <div class="mb-[14px] md:mb-0 md:mt-[4px] lg:mt-[8px] max-w-[70px] md:max-w-[94px] h-[36px] md:h-[44px]">
+                                    <img src="assets/images/pattern.png" alt="Pattern" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium deleniti atque corrupti quos  molestias excepturi odio dignissimos ducimus qui blanditiis sint occaecati .</p>
+
+                            <div class="experienced mt-[20px] lg:mt-[30px] xl:mt-[40px] 2xl:mt-[53px]">
+                                <div class="mb-[12px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[32px] last:mb-[0]">
+                                    <div class="flex items-center justify-between">
+                                        <p class="flex-1 text-white">Divorce And Family Cases</p>
+                                        <p class="w-full ml-[10px] max-w-[50px] text-end text-white">75%</p>
+                                    </div>
+                                    <div class="py-[12px] relative after:absolute after:top-2/4 after:translate-y-[-50%] after:h-[15px] after:w-[15px] after:rounded-full after:bg-highLight after:left-[calc(var(--experience)-10px)] " style="--experience:75%">
+                                        <div class="h-[4px] bg-white rounded-full overflow-hidden relative after:absolute after:top-0 after:last:z-0 after:h-full after:w-[var(--experience)] after:bg-highLight transition-all duration-300"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-[12px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[32px] last:mb-[0]">
+                                    <div class="flex items-center justify-between">
+                                        <p class="flex-1 text-white">Property And Construction</p>
+                                        <p class="w-full ml-[10px] max-w-[50px] text-end text-white">80%</p>
+                                    </div>
+                                    <div class="py-[12px] relative after:absolute after:top-2/4 after:translate-y-[-50%] after:h-[15px] after:w-[15px] after:rounded-full after:bg-highLight after:left-[calc(var(--experience)-10px)] " style="--experience:80%">
+                                        <div class="h-[4px] bg-white rounded-full overflow-hidden relative after:absolute after:top-0 after:last:z-0 after:h-full after:w-[var(--experience)] after:bg-highLight transition-all duration-300"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-[12px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[32px] last:mb-[0]">
+                                    <div class="flex items-center justify-between">
+                                        <p class="flex-1 text-white">Banking And Finance</p>
+                                        <p class="w-full ml-[10px] max-w-[50px] text-end text-white">75%</p>
+                                    </div>
+                                    <div class="py-[12px] relative after:absolute after:top-2/4 after:translate-y-[-50%] after:h-[15px] after:w-[15px] after:rounded-full after:bg-highLight after:left-[calc(var(--experience)-10px)] " style="--experience:75%">
+                                        <div class="h-[4px] bg-white rounded-full overflow-hidden relative after:absolute after:top-0 after:last:z-0 after:h-full after:w-[var(--experience)] after:bg-highLight transition-all duration-300"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-[12px] lg:mb-[20px] xl:mb-[24px] 2xl:mb-[32px] last:mb-[0]">
+                                    <div class="flex items-center justify-between">
+                                        <p class="flex-1 text-white">Banking And Finance</p>
+                                        <p class="w-full ml-[10px] max-w-[50px] text-end text-white">90%</p>
+                                    </div>
+                                    <div class="py-[12px] relative after:absolute after:top-2/4 after:translate-y-[-50%] after:h-[15px] after:w-[15px] after:rounded-full after:bg-highLight after:left-[calc(var(--experience)-10px)] " style="--experience:90%">
+                                        <div class="h-[4px] bg-white rounded-full overflow-hidden relative after:absolute after:top-0 after:last:z-0 after:h-full after:w-[var(--experience)] after:bg-highLight transition-all duration-300"></div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="mt-[16px] md:mt-[20px] lg:mt-[26px] xl:mt-[34px] 2xl:mt-[44px] block">
+                                <a href="#" class="btn btn_highLight bg-highLight px-[22px] md:px-[33px] lg:px-[44px] xl:px-[55px] 2xl:px-[66px] inline-block">Free Consulting</a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <img src="assets/images/history_background.png" alt="" class="img_cover">
+            </section>
+        <!-- END HISTORY SECTION HERE  -->
+
+        <!-- START REVIEWS SECTION HERE -->
+        <section class="py-[50px] md:py-[80px] lg:py-[100px] 1140lg:py-[130px] xl:py-[160px] 2xl:py-[188px]">
+            <div class="container"> 
+                <div class="flex flex-col-reverse md:block text-center">
+                    <h3 class="text-white mt-[14px] md:mt-0">Client Opinions & Reviews</h3>
+                    <div class="mx-auto md:mt-[10px] lg:mt-[14px] xl:mt-[19px] max-w-[94px] h-[44px]">
+                        <svg class="w-full h-full" width="96" height="44" viewBox="0 0 96 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#D1B06B"></line>
+                            <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#D1B06B"></line>
+                            <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#D1B06B"></line>
+                            <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#D1B06B"></line>
+                            <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B"></rect>
+                        </svg>
+                    </div>
+                </div> 
+                <div class="mt-[20px] lg:mt-[30px] xl:mt-[50px] 2xl:mt-[70px]">
+                    <div class="reviewsSwiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex flex-col even:flex-col-reverse">
+                                <div class="px-[20px] lg:px-[28px] xl:px-[38px] 2xl:px-[48px] py-[30px] lg:py-[40px] xl:py-[55px] 2xl:py-[70px] bg-darkblue-600">
+                                    <div class="w-[30px] h-[25px] mb-[16px] lg:mb-[20px] xl:mb-[26px]">
+                                        <svg class="w-full h-full" width="31" height="26" viewBox="0 0 31 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.95 3.075L8.475 13.275L5.025 14.25C5.425 13.5 5.875 12.9 6.375 12.45C6.875 11.95 7.45 11.7 8.1 11.7C9.55 11.7 10.85 12.3 12 13.5C13.2 14.65 13.8 16.15 13.8 18C13.8 19.95 13.125 21.625 11.775 23.025C10.475 24.425 8.85 25.125 6.9 25.125C5.05 25.125 3.425 24.45 2.025 23.1C0.675 21.7 0 20 0 18C0 17.2 0.15 16.275 0.45 15.225C0.8 14.175 1.425 12.8 2.325 11.1L8.325 0L13.95 3.075ZM30.825 3.075L25.35 13.275L21.975 14.25C22.325 13.5 22.75 12.9 23.25 12.45C23.8 11.95 24.375 11.7 24.975 11.7C26.425 11.7 27.75 12.3 28.95 13.5C30.15 14.65 30.75 16.15 30.75 18C30.75 19.95 30.075 21.625 28.725 23.025C27.425 24.425 25.8 25.125 23.85 25.125C22 25.125 20.375 24.45 18.975 23.1C17.625 21.7 16.95 20 16.95 18C16.95 17.2 17.1 16.275 17.4 15.225C17.7 14.175 18.3 12.8 19.2 11.1L25.275 0L30.825 3.075Z" fill="#D1B06B"/>
+                                            </svg> 
+                                    </div>
+                                    <p class="line-clamp-6">There are  of Lorem Ipsum available, but the majority have su alteration in some form, by injected oir  which don't look even slightly believable.</p>
+                                </div>
+
+                                <div class="mt-[12px] md:mt-[16px] 1140lg:mt-[20px] flex items-center">
+                                    <div class="w-full max-w-[24px] md:max-w-[44px] lg:max-w-[64px] xl:max-w-[84px] h-[24px] md:h-[44px] lg:h-[64px] xl:h-[84px] relative rounded-full">
+                                        <img src="assets/images/client_1.png" alt="" class="img_cover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  END REVIEWS SECTION HERE  -->
+    </div>
+
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  
+</body>
+
+</html>

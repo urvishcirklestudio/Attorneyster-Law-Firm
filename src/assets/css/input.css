@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{ 
+/* cormorant-garamond-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/cormorant-garamond-v16-latin-regular.eot');
+    src: url('../fonts/cormorant-garamond-v16-latin-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cormorant-garamond-v16-latin-regular.woff2') format('woff2'),
+         url('../fonts/cormorant-garamond-v16-latin-regular.woff') format('woff'),
+         url('../fonts/cormorant-garamond-v16-latin-regular.ttf') format('truetype'),
+         url('../fonts/cormorant-garamond-v16-latin-regular.svg#CormorantGaramond') format('svg');
+  }
+  /* cormorant-garamond-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/cormorant-garamond-v16-latin-600.eot');
+    src: url('../fonts/cormorant-garamond-v16-latin-600.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cormorant-garamond-v16-latin-600.woff2') format('woff2'),
+         url('../fonts/cormorant-garamond-v16-latin-600.woff') format('woff'),
+         url('../fonts/cormorant-garamond-v16-latin-600.ttf') format('truetype'),
+         url('../fonts/cormorant-garamond-v16-latin-600.svg#CormorantGaramond') format('svg');
+  }
+  /* cormorant-garamond-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/cormorant-garamond-v16-latin-700.eot');
+    src: url('../fonts/cormorant-garamond-v16-latin-700.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cormorant-garamond-v16-latin-700.woff2') format('woff2'),
+         url('../fonts/cormorant-garamond-v16-latin-700.woff') format('woff'),
+         url('../fonts/cormorant-garamond-v16-latin-700.ttf') format('truetype'),
+         url('../fonts/cormorant-garamond-v16-latin-700.svg#CormorantGaramond') format('svg');
+  }
+
+  /* outfit-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/outfit-v11-latin-regular.eot');
+    src: url('../fonts/outfit-v11-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/outfit-v11-latin-regular.woff2') format('woff2'),
+         url('../fonts/outfit-v11-latin-regular.woff') format('woff'),
+         url('../fonts/outfit-v11-latin-regular.ttf') format('truetype'),
+         url('../fonts/outfit-v11-latin-regular.svg#Outfit') format('svg');
+  }
+  /* outfit-500 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/outfit-v11-latin-500.eot');
+    src: url('../fonts/outfit-v11-latin-500.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/outfit-v11-latin-500.woff2') format('woff2'),
+         url('../fonts/outfit-v11-latin-500.woff') format('woff'),
+         url('../fonts/outfit-v11-latin-500.ttf') format('truetype'),
+         url('../fonts/outfit-v11-latin-500.svg#Outfit') format('svg');
+  }
+  /* outfit-600 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/outfit-v11-latin-600.eot');
+    src: url('../fonts/outfit-v11-latin-600.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/outfit-v11-latin-600.woff2') format('woff2'),
+         url('../fonts/outfit-v11-latin-600.woff') format('woff'),
+         url('../fonts/outfit-v11-latin-600.ttf') format('truetype'),
+         url('../fonts/outfit-v11-latin-600.svg#Outfit') format('svg');
+  }
+  /* outfit-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/outfit-v11-latin-700.eot');
+    src: url('../fonts/outfit-v11-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/outfit-v11-latin-700.woff2') format('woff2'),
+         url('../fonts/outfit-v11-latin-700.woff') format('woff'),
+         url('../fonts/outfit-v11-latin-700.ttf') format('truetype'),
+         url('../fonts/outfit-v11-latin-700.svg#Outfit') format('svg');
+  }
+
+  /* luxurious-script-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Luxurious Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/luxurious-script-v7-latin-regular.eot');
+  src: url('../fonts/luxurious-script-v7-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/luxurious-script-v7-latin-regular.woff2') format('woff2'),
+       url('../fonts/luxurious-script-v7-latin-regular.woff') format('woff'),
+       url('../fonts/luxurious-script-v7-latin-regular.ttf') format('truetype'),
+       url('../fonts/luxurious-script-v7-latin-regular.svg#LuxuriousScript') format('svg');
+}
+
+  body{
+    font: var(--p); 
+    
+  }
+ :root{
+    --secondary-font:"outfit", sans-serif;
+    --primary-font:"Cormorant Garamond", sans-serif;
+    --h1: normal normal 700 65px/74px var(--primary-font);
+    --h2: normal normal 700 65px/74px var(--primary-font);
+    --h3: normal normal 700 45px/52px var(--primary-font);
+    --h4: normal normal 700 40px/46px var(--primary-font);
+    --h5: normal normal 700 35px/40px var(--primary-font);
+    --h6: normal normal 700 30px/34px var(--primary-font);
+    --p: normal normal 400 20px/28px var(--secondary-font);
+    --fs22: normal normal 400 20px/28px var(--secondary-font);
+ }
+  h1,.h1{font: var(--h1); @apply text-white}
+  h2,.h2{font:var(--h2); @apply text-white}
+  h3,.h3{font:var(--h3); @apply text-white}
+  h4,.h4{font:var(--h4); @apply text-white}
+  h5,.h5{font:var(--h5); @apply text-white}
+  h6,.h6{font:var(--h6); @apply text-white}
+  p{font:var(--p); @apply text-offwhite}
+  .fs22{font:var(--fs22);}
+
+  .btn{
+    @apply py-[10px] sm:py-[14px] xl:py-[22px] 2xl:py-[28px] px-[20px] xl:text-[22px] border transition duration-150 text-darkblue-900
+  }
+
+  .btn_highLight{
+    @apply  border-highLight hover:bg-white hover:border-white; 
+  }
+  .btn_white{
+    @apply border-white hover:bg-highLight hover:border-highLight; 
+  }
+
+  .img_cover{
+    @apply object-cover absolute top-0 left-0 h-full w-full
+  }
+
+  @media screen and (max-width: 1365px) {
+    :root{ 
+      --h1: normal normal 700 60px/70px var(--primary-font);
+      --h2: normal normal 700 60px/70px var(--primary-font);
+      --h3: normal normal 700 40px/46px var(--primary-font);
+      --h4: normal normal 700 35px/40px var(--primary-font);
+      --h5: normal normal 700 30px/34px var(--primary-font);
+      --h6: normal normal 700 25px/30px var(--primary-font);
+      --p: normal normal 400 20px/24px var(--secondary-font);
+   }
+  } 
+   @media screen and (max-width: 1279px) {
+    :root{  
+      --h2: normal normal 700 52px/62px var(--primary-font); 
+      --h3: normal normal 700 38px/42px var(--primary-font);
+      --p: normal normal 400 18px/24px var(--secondary-font);
+   }
+  } 
+   @media screen and (max-width: 991px) {
+    :root{  
+      --h2: normal normal 700 46px/52px var(--primary-font); 
+      --h3: normal normal 700 32px/38px var(--primary-font);
+      --h5: normal normal 700 26px/30px var(--primary-font);
+      --h6: normal normal 700 22px/24px var(--primary-font);
+      --p: normal normal 400 16px/20px var(--secondary-font);
+      --fs22: normal normal 400 22px/28px var(--secondary-font);
+   }
+  }  
+  @media screen and (max-width: 575px) {
+    :root{  
+      --h2: normal normal 700 40px/46px var(--primary-font); 
+      --p: normal normal 400 14px/20px var(--secondary-font);
+      --h5: normal normal 700 22px/28px var(--primary-font);
+      --h6: normal normal 700 16px/20px var(--primary-font);
+
+   }
+  } 
+ 
+  .container{ 
+    margin: 0 auto;
+  }
+   
+  .dropdown_menu{
+    top: calc(100% + 10px);
+  }
+
+}
