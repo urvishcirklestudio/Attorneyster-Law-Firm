@@ -29,14 +29,22 @@ $(document).ready(function(){
     });
 
    new Swiper(".reviewsSwiper", {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 1.3,
+        spaceBetween: 28,
         breakpoints: { 
+            575: {
+                slidesPerView: 2, 
+            },
             768: {
                 slidesPerView: 3, 
             },
             992: {
+                slidesPerView: 3, 
+
+            }, 1140: {
                 slidesPerView: 4, 
+                spaceBetween: 18,
+
             },
         }
       });
