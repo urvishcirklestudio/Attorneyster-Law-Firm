@@ -175,8 +175,8 @@
       --h5: normal normal 700 26px/30px var(--primary-font);
       --h6: normal normal 700 22px/24px var(--primary-font);
       --p: normal normal 400 16px/20px var(--secondary-font);
-      --fs22: normal normal 400 22px/28px var(--secondary-font);
-   }
+      --fs22: normal normal 400 20px/24px var(--secondary-font);
+    }
   }  
   @media screen and (max-width: 575px) {
     :root{  
@@ -184,6 +184,7 @@
       --p: normal normal 400 14px/20px var(--secondary-font);
       --h5: normal normal 700 22px/28px var(--primary-font);
       --h6: normal normal 700 16px/20px var(--primary-font);
+      --fs22: normal normal 400 18px/22px var(--secondary-font);
 
    }
   } 
