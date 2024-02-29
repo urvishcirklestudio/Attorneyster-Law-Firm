@@ -48,4 +48,15 @@ $(document).ready(function(){
             },
         }
       });
+
+
+
+      $("input,textarea").on("keyup", function() {
+        if($(this).val() != ""){
+            $(this).addClass('text-fill');
+        }else{
+            $(this).removeClass('text-fill');
+        }
+         
+      } );
 })
