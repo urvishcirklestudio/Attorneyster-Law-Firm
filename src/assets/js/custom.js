@@ -52,11 +52,15 @@ $(document).ready(function(){
 
 
       $("input,textarea").on("keyup", function() {
-        if($(this).val() != ""){
-            $(this).addClass('text-fill');
-        }else{
-            $(this).removeClass('text-fill');
-        }
-         
-      } );
+          if($(this).val() != ""){
+              $(this).addClass('text-fill');
+            }else{
+                $(this).removeClass('text-fill');
+            }
+            
+        } ); 
+        $(".valueCard .cardItems").each(function(index) {
+            let num = index+1
+            $(this).css('top',`${num*30}px`)  ;
+        })
 })
