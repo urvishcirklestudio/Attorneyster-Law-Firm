@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Area</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="">
+    <header class="relative z-10">
+        <div class="container">
+            <div
+                class="top_header text-[14px] lg:text-[16px] xl:text-[22px]  flex items-center justify-between py-[14px]  2xl:py-[40px] xl:py-[30px] 1140lg:py-[20px] ">
+                <div class="menu_icon flex md:hidden">
+                    <button class="border-0 bg-transparent p-0 text-white"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg></button>
+                </div>
+                <div class="nav_logo">
+                    <a href="index.html" class="">
+                        <h1>
+                            <img src="assets/images/logo.svg" alt=""
+                                class="max-h-[30px] sm:max-h-[40px] xl:max-h-[50px]">
+                        </h1>
+                    </a>
+                </div>
+
+                <div class="flex item-center w-[20px] md:w-auto">
+                    <a href="#" class="header_cart text-white flex items-center">
+                        <svg class="h-[18px] w-[18px] xl:w-[25px] xl:h-[25px] md:mr-[10px]" width="33" height="34"
+                            viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.59373 33L5.02844 9H27.8524L31.2871 33H1.59373Z" stroke="currentColor"
+                                stroke-width="2" />
+                            <mask id="path-2-inside-1_2_5140" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.4405 0C12.3862 0 9.09961 3.28664 9.09961 7.34092V10.0456H23.7814V7.34091C23.7814 3.28664 20.4948 0 16.4405 0Z" />
+                            </mask>
+                            <path
+                                d="M9.09961 10.0456H7.09961V12.0456H9.09961V10.0456ZM23.7814 10.0456V12.0456H25.7814V10.0456H23.7814ZM11.0996 7.34092C11.0996 4.39121 13.4908 2 16.4405 2V-2C11.2817 -2 7.09961 2.18208 7.09961 7.34092H11.0996ZM11.0996 10.0456V7.34092H7.09961V10.0456H11.0996ZM9.09961 12.0456H23.7814V8.04561H9.09961V12.0456ZM21.7814 7.34091V10.0456H25.7814V7.34091H21.7814ZM16.4405 2C19.3902 2 21.7814 4.39121 21.7814 7.34091H25.7814C25.7814 2.18207 21.5994 -2 16.4405 -2V2Z"
+                                fill="currentColor" mask="url(#path-2-inside-1_2_5140)" />
+                        </svg>
+
+                        <p class="hidden md:block text-[14px] md:text-[16px] xl:text-[22px] ">Cart(0)</p>
+                    </a>
+                    <a href="#AppoinmentForm"
+                        class="header_consult_btn hidden md:block text-white py-[16px] px-[25px] xl:py-[28px] xl:px-[45px] 1140lg:py-[20px] 1140lg:px-[35px] ms-[20px] md:ms-[28px] 1140lg:ms-[47px] bg-white bg-opacity-[0.1] transition duration-300 hover:bg-opacity-[1] hover:text-darkblue-900">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="middle_header [&.show]:left-0 fixed md:static top-0 left-[-200%] w-full max-w-[400px] md:max-w-full text-[14px] md:text-[16px] xl:text-[22px] md:border-y border-[#4E555F] transition-all duration-300 z-[9999]">
+                <div class="nav_close text-highLight md:hidden text-right bg-darkblue-600 border-b border-highLight">
+                    <button class="border-0 bg-transparent border-l border-highLight p-[10px]">
+                        <svg class="h-[15px] w-[15px]" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0"
+                            viewBox="0 0 329.269 329" style="enable-background:new 0 0 512 512" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                                    fill="currentColor" opacity="1" data-original="#000000"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <nav
+                    class="main_nav h-[100vh] md:h-auto bg-darkblue-600 md:bg-transparent md:flex items-center justify-between md:py-[12px] 1140lg:py-[22px] xl:py-[32px] p-[20px] md:p-0">
+                    <ul
+                        class="md:flex items-center text-white h-[calc(100vh-133px)] md:h-auto overflow-y-auto md:overflow-visible">
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="index.html"
+                                class="transition duration-300 hover:text-highLight">Home</a></li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="about.html"
+                                class="transition duration-300 hover:text-highLight">About Us</a></li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0">
+                            <div class="dropdown relative">
+                                <div
+                                    class="dropdown_toggle flex items-center transition duration-300 hover:text-highLight">
+                                    Pages
+                                    <svg class="ms-[10px]" width="13" height="7" viewBox="0 0 13 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.21973 1L6.21973 6L11.2197 1" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+
+                                <ul
+                                    class="hidden py-[5px] dropdown_menu md:absolute left-0 min-w-full text-[14px] md:text-[18px] lg:text-[20px] text-nowrap md:bg-darkblue-700 rounded-[5px] md:border border-darkblue-700 leading-none">
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="blog.html">Blog</a>
+                                    </li> 
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="cases.html">Cases</a>
+                                    </li>
+
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="pricing.html">Pricing</a>
+                                    </li>
+                                    <li
+                                        class="px-[10px] py-[5px] block dropdown_item transition duration-300 hover:text-highLight hover:bg-darkblue-900">
+                                        <a href="testimonials.html">Testimonials</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="py-[6px] md:p-0 md:me-[14px] xl:me-[30px] 1140lg:me-[20px] last:me-0-0"><a href="contact-us.html"
+                                class="transition duration-300 hover:text-highLight">Contact Us</a></li>
+                    </ul>
+
+                    <ul
+                        class="call_mail flex items-center pt-[10px] mt-[10px] md:mt-0 md:pt-0 border-t border-highLight md:border-0">
+
+                        <li class="me-[20px] lg:me-[46px] last:me-0">
+                            <a href="#"
+                                class="flex items-center [&:hover_.iconCircle]:bg-highLight [&:hover_.iconCircle]:text-darkblue-900">
+                                <div
+                                    class="iconCircle text-highLight h-[36px] w-[36px] 1140lg:h-[52px] xl:h-[62px] 1140lg:w-[52px] xl:w-[62px] rounded-full border border-highLight flex items-center justify-center transition duration-300">
+                                    <svg class="w-1/3" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.1809 12.8312C16.9828 12.6202 16.2834 11.9964 14.9978 11.171C13.7026 10.3385 12.7475 9.81934 12.4735 9.69829C12.4494 9.68758 12.4228 9.68365 12.3966 9.68692C12.3704 9.6902 12.3455 9.70056 12.3248 9.71688C11.8834 10.0611 11.1404 10.6933 11.1006 10.7274C10.8433 10.9479 10.8433 10.9479 10.6327 10.8792C10.2623 10.7578 9.11176 10.1468 8.10919 9.14198C7.10662 8.13714 6.46417 6.95812 6.34273 6.58814C6.27329 6.37715 6.27329 6.37715 6.49452 6.11987C6.52868 6.08003 7.16126 5.33702 7.50544 4.89608C7.52177 4.87531 7.53212 4.85049 7.5354 4.82428C7.53868 4.79807 7.53475 4.77147 7.52404 4.74732C7.40299 4.47296 6.88386 3.51821 6.0513 2.22308C5.2248 0.937808 4.60171 0.238443 4.39072 0.0403585C4.37136 0.0220881 4.34743 0.00937816 4.32145 0.00356797C4.29547 -0.00224222 4.2684 -0.000937497 4.2431 0.00734453C3.50558 0.260788 2.79399 0.584178 2.11805 0.973099C1.46551 1.35243 0.847733 1.78862 0.271904 2.27658C0.251803 2.29367 0.236733 2.31591 0.228309 2.34091C0.219886 2.36591 0.218428 2.39274 0.22409 2.41851C0.3034 2.78811 0.682495 4.33104 1.85887 6.46823C3.05914 8.64943 3.89095 9.76697 5.65361 11.5235C7.41627 13.2801 8.56911 14.162 10.7526 15.3623C12.8898 16.5386 14.4335 16.9181 14.8024 16.9967C14.8282 17.0023 14.855 17.0008 14.8801 16.9924C14.9052 16.984 14.9275 16.9689 14.9447 16.9488C15.4325 16.373 15.8686 15.7553 16.2478 15.1027C16.6366 14.4267 16.96 13.7152 17.2135 12.9777C17.2216 12.9526 17.2229 12.9258 17.2172 12.9C17.2114 12.8742 17.1989 12.8505 17.1809 12.8312Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                <div class="ml-[12px] hidden md:block">
+                                    <p
+                                        class="leading-none text-highLight text-[14px] xl:text-[18px] 1140lg:text-[16px] font-medium">
+                                        Call Us On:</p>
+                                    <p class="leading-none mt-[4px] text-[14px] 1140lg:text-[20px] text-white">
+                                        911-987654321</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="me-[20px] lg:me-[46px] last:me-0">
+                            <a href="#"
+                                class="flex items-center [&:hover_.iconCircle]:bg-highLight [&:hover_.iconCircle]:text-darkblue-900">
+                                <div
+                                    class="iconCircle text-highLight h-[36px] w-[36px] 1140lg:h-[52px] xl:h-[62px] 1140lg:w-[52px] xl:w-[62px] rounded-full border border-highLight flex items-center justify-center transition duration-300">
+                                    <svg class="w-1/3" width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5778 0.799805H0.86356C0.693064 0.799805 0.529551 0.868766 0.408992 0.991517C0.288432 1.11427 0.220703 1.28075 0.220703 1.45435V14.5453C0.220703 14.7189 0.288432 14.8853 0.408992 15.0081C0.529551 15.1308 0.693064 15.1998 0.86356 15.1998H17.5778C17.7483 15.1998 17.9119 15.1308 18.0324 15.0081C18.153 14.8853 18.2207 14.7189 18.2207 14.5453V1.45435C18.2207 1.28075 18.153 1.11427 18.0324 0.991517C17.9119 0.868766 17.7483 0.799805 17.5778 0.799805ZM9.61526 9.17103C9.50243 9.26033 9.36361 9.30881 9.2207 9.30881C9.0778 9.30881 8.93897 9.26033 8.82615 9.17103L2.53298 4.18749L3.32209 3.15412L9.2207 7.82512L15.1193 3.15412L15.9084 4.18749L9.61526 9.17103Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                </div>
+                                <div class="ml-[12px] hidden md:block">
+                                    <p
+                                        class="leading-none text-highLight text-[14px] xl:text-[18px] 1140lg:text-[16px] font-medium">
+                                        Email us:</p>
+                                    <p class="leading-none mt-[4px] text-[14px] 1140lg:text-[20px] text-white">
+                                        yourmail@mail.com</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="black_layer hidden fixed top-0 left-0 h-[100vh] w-[100vw] bg-darkblue-900 opacity-80 z-10"></div>
+    </header>
+
+    <!-- <div class="wrapper"> -->
+    <div class="wrapper mt-[-58px] sm:mt-[-68px] md:mt-[-174px] 1140lg:mt-[-214px] xl:mt-[-272px] 2xl:mt-[-292px]">
+        <!-- START HERO SECTION HERE -->
+        <div class="w-full overflow-hidden relative">
+            <div
+                class="w-full pt-[60%] md:pt-[46%] lg:pt-[37%] mt-[58px] sm:mt-[68px] md:mt-[174px] 1140lg:mt-[214px] xl:mt-[272px] 2xl:mt-[292px] relative">
+                <div class="container text-center absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%]">
+                 
+                    <h2>Practice Area’s</h2>
+                    <div class="mx-auto mt-[10px] md:mt-[16px] lg:mt-[21px] max-w-[94px] h-[30px] md:h-[44px]">
+                        <svg class="w-full h-full" width="96" height="44" viewBox="0 0 96 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.5" y1="26.5" x2="95.5" y2="26.5" stroke="#D1B06B"></line>
+                            <line x1="0.5" y1="16.5" x2="95.5" y2="16.5" stroke="#D1B06B"></line>
+                            <line x1="53" y1="44" x2="53" y2="2.18557e-08" stroke="#D1B06B"></line>
+                            <line x1="43" y1="44" x2="43" y2="2.18557e-08" stroke="#D1B06B"></line>
+                            <rect x="44.5" y="18" width="7" height="7" fill="#D1B06B"></rect>
+                        </svg>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="img_box absolute top-0 left-0 h-full w-full opacity-20 z-[-1]">
+                <img src="assets/images/hero_bg_img_2.png" alt="Hero Background"
+                    class="absolute top-0 left-0 h-full w-full object-cover">
+            </div>
+        </div>
+        <!--  END HERO SECTION HERE  --> 
+ 
+        <!-- START CONSULTATION SECTION HERE -->
+        <section class=" py-[50px] md:pt-[80px] lg:pt-[110px] 1140lg:pt-[140px] xl:pt-[170px] 2xl:pt-[200px]  lg:pb-[100px]">
+            <div class="container border-b border-[#3A4553]">
+                <div class="pb-[68%] relative">
+                    <img src="assets/images/practice_areas.png" alt="" class="img_cover">
+                </div>
+
+                <div class="mt-[40px] md:mt-[50px] lg:mt-[60px] xl:mt-[70px] 2xl:mt-[87px]">
+                    <div class="mb-[20px] md:mb-[30px] lg:mb-[40px]">
+                        <h3 class="mb-[14px] md:mb-[18px] lg:mb-[24px] xl:mb-[30px]">Introduction</h3>
+                        <p class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0">
+                            Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements. Collaboratively expedite quality manufactured products via client-focused results quickly communicate enabled technology and turnkey leadership skills. Uniquely enable accurate supply chains rather than friction technology.
+                        </p>
+                    </div> 
+                    <div class="mb-[20px] md:mb-[30px] lg:mb-[40px]">
+                        <h3 class="mb-[14px] md:mb-[18px] lg:mb-[24px] xl:mb-[30px]">About the law</h3>
+                        <p class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0">
+                            Appropriately empower dynamic leadership skills after business portals. Globally my cardinate interactive supply chains with distinctive quality vectors global sources services. Uniquely matrix economically sound value through cooperative technology. Competently parallel task fully researched data and enterprise process improvements.
+                        </p>
+                        <ul class="mt-[8px] md:mt-[10px] lg:mt-[18px] last:mt-0 list-disc">
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">Dynamically target high-payoff intellectual capital for customized</li>
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">Interactively procrastinate high-payoff content</li>
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">Credibly reinter mediate backend ideas for cross-platform models</li>
+                        </ul>
+                    </div>
+                    <div class="mb-[20px] md:mb-[30px] lg:mb-[40px]">
+                        <h3 class="mb-[14px] md:mb-[18px] lg:mb-[24px] xl:mb-[30px]">Make real time a law services</h3>
+                        <p class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0">
+                            Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+                        </p>
+                        <ul class="mt-[8px] md:mt-[10px] lg:mt-[18px] last:mt-0">
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside"> 
+                                1. It brings the right people together with all the right information and tools to get work done
+                            </li>
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">
+                                2. We provide operational efficiency, data security, and flexible scale
+                            </li>
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">
+                                3. Your best work, together in one package that works seamlessly from your computer
+                            </li>
+                            <li class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0 text-offwhite list-inside">
+                                4. Delivers the tools you need to save time Improve field performance always
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mb-[20px] md:mb-[30px] lg:mb-[40px]">
+                        <h3 class="mb-[14px] md:mb-[18px] lg:mb-[24px] xl:mb-[30px]">Overview:</h3>
+                        <p class="mb-[8px] md:mb-[10px] lg:mb-[18px] last:mb-0">
+                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring interoperable internal or “organic” sources.
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  END CONSULTATION SECTION HERE  -->
+  
+ 
+    </div>
+    
+    <!-- START FOOTER SECTION HERE -->
+    <footer class="py-[50px] md:py-[80px] lg:py-[100px] xl:py-[120px] 2lx:py-[140px]">
+        <div class="container">
+            <div class="heading flex items-center justify-between">
+                <div class="wfill max-w-[22%] sm:max-w-[24%] md:max-w-[30%] overflow-hidden rotate-180">
+                    <svg width="456" height="45" viewBox="0 0 456 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.00488281" y1="27" x2="455.533" y2="27" stroke="#D1B06B"/>
+                        <line x1="0.00488281" y1="17" x2="455.533" y2="17" stroke="#D1B06B"/>
+                        <line x1="47.5273" y1="44.5" x2="47.5273" y2="0.5" stroke="#D1B06B"/>
+                        <line x1="38.4668" y1="44.5" x2="38.4668" y2="0.5" stroke="#D1B06B"/>
+                        <rect x="39.873" y="18.5" width="6.34266" height="7" fill="#D1B06B"/>
+                    </svg>                       
+                </div>
+                <div class="wfill max-w-[46%] sm:max-w-[38%] md:max-w-[30%] overflow-hidden">
+                    <a href="index.html" class=""> 
+                        <img src="assets/images/logo.svg" alt="" class="max-h-[40px] sm:max-h-[60px] xl:max-h-[80px]"> 
+                    </a>
+                </div>
+                <div class="wfill max-w-[22%] sm:max-w-[24%] md:max-w-[30%] overflow-hidden">
+                    <svg width="456" height="45" viewBox="0 0 456 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.00488281" y1="27" x2="455.533" y2="27" stroke="#D1B06B"/>
+                        <line x1="0.00488281" y1="17" x2="455.533" y2="17" stroke="#D1B06B"/>
+                        <line x1="47.5273" y1="44.5" x2="47.5273" y2="0.5" stroke="#D1B06B"/>
+                        <line x1="38.4668" y1="44.5" x2="38.4668" y2="0.5" stroke="#D1B06B"/>
+                        <rect x="39.873" y="18.5" width="6.34266" height="7" fill="#D1B06B"/>
+                    </svg>                        
+                </div>
+            </div>
+
+            <div class="footer_links my-[30px] lg:my-[50px] xl:my-[70px] 2xl:my-[90px] flex flex-wrap justify-between">
+                <div class="w-full max-w-[100%] sm:max-w-[38%] md:max-w-[190px] lg:max-w-[250px] xl:max-w-[290px] mb-[30px] md:mb-0 last:mb-0">
+                    <div class="pt-[10px] md:pt-[12px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[14px] md:pb-[20px] lg:pb-[24px] xl:pb-[30px] 2xl:pb-[34px] mb-[14px] md:mb-[20px] lg:mb-[24px] xl:mb-[30px] 2xl:mb-[34px] border-y border-[#3A4553]">
+                        <h6>Quick Link</h6>
+                    </div>
+
+                    <div class="flex justify-between max-w-[280px] sm:max-w-full">
+                        <div class="text-offwhite">
+                            <a href="index.html" class="block py-[4px] transition duration-300 hover:text-highLight">Home</a> 
+                            <a href="about.html" class="block py-[4px] transition duration-300 hover:text-highLight">About</a> 
+                            <a href="contact-us.html" class="block py-[4px] transition duration-300 hover:text-highLight">Contact</a> 
+                            <a href="blog.html" class="block py-[4px] transition duration-300 hover:text-highLight">Blog</a> 
+                            <a href="blog-post.html" class="block py-[4px] transition duration-300 hover:text-highLight">Blog Post</a> 
+                            <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Lawyers</a> 
+                        </div>
+                        <div class="text-offwhite"> 
+                            <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Lawyer Single</a> 
+                            <a href="cases.html" class="block py-[4px] transition duration-300 hover:text-highLight">Case Results</a> 
+                            <a href="practice-area.html" class="block py-[4px] transition duration-300 hover:text-highLight">Practice Areas</a> 
+                            <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Packages</a> 
+                            <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Package Single</a>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full max-w-[100%] sm:max-w-[144px] md:max-w-[150px] lg:max-w-[180px] xl:max-w-[200px] mb-[30px] md:mb-0 last:mb-0">
+                    <div class="pt-[10px] md:pt-[12px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[14px] md:pb-[20px] lg:pb-[24px] xl:pb-[30px] 2xl:pb-[34px] mb-[14px] md:mb-[20px] lg:mb-[24px] xl:mb-[30px] 2xl:mb-[34px] border-y border-[#3A4553]">
+                        <h6>Utility Page</h6>
+                    </div>
+                    <div class="text-offwhite">
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Start Here</a> 
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Style Guide</a>  
+                        <a href="404.html" class="block py-[4px] transition duration-300 hover:text-highLight">404 Not Found</a>  
+                        <a href="password-protected.html" class="block py-[4px] transition duration-300 hover:text-highLight">Password Protected</a>  
+                        <a href="licenses.html" class="block py-[4px] transition duration-300 hover:text-highLight">Licenses</a>  
+                        <a href="changelog.html" class="block py-[4px] transition duration-300 hover:text-highLight">Changelog</a>  
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[100%] sm:max-w-[125px] md:max-w-[120px] lg:max-w-[140px] xl:max-w-[164px] mb-[30px] md:mb-0 last:mb-0">
+                    <div class="pt-[10px] md:pt-[12px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[14px] md:pb-[20px] lg:pb-[24px] xl:pb-[30px] 2xl:pb-[34px] mb-[14px] md:mb-[20px] lg:mb-[24px] xl:mb-[30px] 2xl:mb-[34px] border-y border-[#3A4553]">
+                        <h6>Practice Area</h6>
+                    </div>
+                    <div class="text-offwhite">
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Family Law</a> 
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Criminal Law</a>  
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Parsonal Injury</a>  
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Real Estate Law</a>  
+                        <a href="#" class="block py-[4px] transition duration-300 hover:text-highLight">Business Law</a>  
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[100%] sm:max-w-[100%] md:max-w-[180px] lg:max-w-[280px] xl:max-w-[330px] mb-[30px] md:mb-0 last:mb-0">
+                    <div class="pt-[10px] md:pt-[12px] lg:pt-[16px] xl:pt-[20px] 2xl:pt-[24px] pb-[14px] md:pb-[20px] lg:pb-[24px] xl:pb-[30px] 2xl:pb-[34px] mb-[14px] md:mb-[20px] lg:mb-[24px] xl:mb-[30px] 2xl:mb-[34px] border-y border-[#3A4553]">
+                        <h6>Conatct Us</h6>
+                    </div>
+
+                    <div class="text-offwhite">
+                        <address>Head Office Address 121 King Street, Melbourne West,Australia</address>
+                        <br>
+                        <div class="flex items-center py-[4px]">
+                            <span>Phone:</span>
+                            <a href="#" class="transition duration-300 hover:text-highLight ms-[4px]">(011) 9876 54321</a>
+                        </div>
+                        <div class="flex items-center py-[4px]">
+                            <span>Email:</span>
+                            <a href="#" class="transition duration-300 hover:text-highLight ms-[4px]">info@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-[12px] md:py-[16px] 1140lg:py-[25px] border-y border-[#3A4553] lg:flex items-center justify-between">
+                <p class="mb-[20px] lg:mb-0 text-center">
+                    Copyright ©  <span><a href="#" class="text-highLight px-[5px] hover:opacity-50 transition duration-300">Attorney Law</a></span> | Designed by <span><a href="#" class="text-highLight px-[5px] hover:opacity-50 transition duration-300">
+                        VictorFlow
+                    </a></span> Templates - Powered by Webflow
+                    
+                </p>
+
+                <div class="flex items-center justify-center">
+                    <p class="text-highLight">Follow :</p>
+                    <ul class="flex items-center justify-center ms-[10px] gap-[10px] xl:gap-[20px]">
+                        <li class="w-[20px] h-[20px] text-white hover:text-highLight transition duration-300">
+                            <a href="#"> 
+                                <svg class="w-full h-full" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8655 1.57069C14.9461 1.5738 15.9816 1.98857 16.7458 2.72442C17.5099 3.46028 17.9407 4.45741 17.9439 5.49806V13.3519C17.9407 14.3926 17.5099 15.3897 16.7458 16.1256C15.9816 16.8614 14.9461 17.2762 13.8655 17.2793H5.70952C4.62885 17.2762 3.59336 16.8614 2.82921 16.1256C2.06506 15.3897 1.63433 14.3926 1.6311 13.3519V5.49806C1.63433 4.45741 2.06506 3.46028 2.82921 2.72442C3.59336 1.98857 4.62885 1.5738 5.70952 1.57069H13.8655ZM13.8655 0H5.70952C2.56922 0 0 2.47406 0 5.49806V13.3519C0 16.3759 2.56922 18.85 5.70952 18.85H13.8655C17.0058 18.85 19.575 16.3759 19.575 13.3519V5.49806C19.575 2.47406 17.0058 0 13.8655 0Z" fill="currentColor"></path>
+                                    <path d="M15.0887 5.49816C14.8467 5.49816 14.6102 5.42906 14.409 5.29961C14.2078 5.17015 14.051 4.98616 13.9584 4.77088C13.8658 4.55561 13.8416 4.31873 13.8888 4.09019C13.936 3.86166 14.0525 3.65174 14.2236 3.48697C14.3947 3.32221 14.6127 3.21 14.85 3.16454C15.0874 3.11909 15.3334 3.14242 15.5569 3.23159C15.7805 3.32076 15.9715 3.47176 16.106 3.6655C16.2404 3.85924 16.3122 4.08702 16.3122 4.32003C16.3125 4.47484 16.2811 4.62819 16.2197 4.77127C16.1584 4.91436 16.0683 5.04437 15.9546 5.15383C15.8409 5.2633 15.7059 5.35007 15.5573 5.40916C15.4087 5.46824 15.2495 5.49849 15.0887 5.49816ZM9.78731 6.28329C10.4326 6.28329 11.0634 6.46756 11.5999 6.81278C12.1365 7.15801 12.5547 7.64869 12.8016 8.22278C13.0485 8.79687 13.1131 9.42859 12.9873 10.038C12.8614 10.6475 12.5506 11.2073 12.0943 11.6467C11.6381 12.0861 11.0567 12.3853 10.4238 12.5065C9.79092 12.6278 9.13492 12.5655 8.53875 12.3278C7.94257 12.09 7.43302 11.6873 7.07452 11.1706C6.71601 10.6539 6.52466 10.0465 6.52466 9.4251C6.52559 8.59211 6.86962 7.7935 7.48129 7.20449C8.09295 6.61548 8.92228 6.28418 9.78731 6.28329ZM9.78731 4.7126C8.81941 4.7126 7.87326 4.98898 7.06848 5.5068C6.26371 6.02462 5.63647 6.76061 5.26607 7.6217C4.89568 8.4828 4.79876 9.43033 4.98759 10.3445C5.17642 11.2586 5.6425 12.0983 6.3269 12.7573C7.01131 13.4164 7.88329 13.8652 8.83258 14.0471C9.78188 14.2289 10.7658 14.1356 11.6601 13.7789C12.5543 13.4222 13.3186 12.8182 13.8563 12.0432C14.394 11.2683 14.6811 10.3571 14.6811 9.4251C14.6811 8.17527 14.1655 6.97663 13.2477 6.09286C12.33 5.20909 11.0852 4.7126 9.78731 4.7126Z" fill="currentColor"></path>
+                                </svg>  
+                            </a>                                      
+                        </li>
+
+                        <li class="w-[20px] h-[20px] text-white hover:text-highLight transition duration-300">
+                            <a href="#">
+                                <svg class="w-full h-full" width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1502 9.425C20.1502 4.22021 15.7677 0 10.3627 0C4.95772 0 0.575195 4.22021 0.575195 9.425C0.575195 14.1291 4.15375 18.0283 8.8334 18.736V12.1503H6.34764V9.425H8.8334V7.34855C8.8334 4.98683 10.295 3.68122 12.5304 3.68122C13.6013 3.68122 14.7216 3.86551 14.7216 3.86551V6.18516H13.4868C12.2717 6.18516 11.8916 6.91139 11.8916 7.65781V9.425H14.6058L14.1724 12.1503H11.892V18.7368C16.5716 18.0295 20.1502 14.1303 20.1502 9.425Z" fill="currentColor"></path>
+                                </svg>                                            
+                            </a>
+                        </li>
+
+                        <li class="w-[20px] h-[20px] text-white hover:text-highLight transition duration-300">
+                            <a href="#">
+                                <svg class="w-full h-full" width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.1236 1.98809C20.3369 2.32994 19.5045 2.55515 18.6527 2.65661C19.5478 2.13245 20.221 1.29972 20.546 0.314605C19.6997 0.809482 18.7753 1.15671 17.8125 1.34142C17.407 0.916506 16.9194 0.578477 16.3793 0.347876C15.8391 0.117276 15.2577 -0.00107808 14.6704 7.39936e-06C12.2926 7.39936e-06 10.3683 1.89633 10.3683 4.23397C10.3666 4.55913 10.4039 4.88332 10.4793 5.19962C8.77418 5.11968 7.10455 4.68472 5.5772 3.92255C4.04985 3.16038 2.69841 2.08779 1.60934 0.773394C1.22727 1.4175 1.02521 2.1524 1.02427 2.9013C1.02427 4.36943 1.79023 5.66714 2.94682 6.42742C2.26158 6.41116 1.59037 6.22979 0.990193 5.89872V5.95116C0.990193 8.00478 2.4758 9.71323 4.44203 10.1021C4.07229 10.2007 3.69127 10.2506 3.30861 10.2507C3.03708 10.2511 2.76617 10.2248 2.49983 10.172C3.04644 11.8542 4.63735 13.0777 6.52188 13.1126C4.99056 14.2928 3.11051 14.9306 1.1772 14.9259C0.834038 14.9254 0.49119 14.905 0.150391 14.8648C2.11714 16.1206 4.40334 16.7849 6.73685 16.7786C14.6612 16.7786 18.9905 10.3249 18.9905 4.72772C18.9905 4.5442 18.9856 4.36069 18.9769 4.18154C19.8172 3.58383 20.5441 2.84105 21.1236 1.98809Z" fill="currentColor"></path>
+                                </svg>
+                                    
+                            </a>
+                        </li>
+
+                        <li class="w-[20px] h-[20px] text-white hover:text-highLight transition duration-300">
+                            <a href="#">
+                                <svg class="w-full h-full" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0681 0C4.57613 0 0.123047 4.4511 0.123047 9.94064C0.123047 14.0101 2.5738 17.5071 6.07677 19.047C6.05013 18.3547 6.07233 17.5204 6.24992 16.766C6.44083 15.9583 7.52858 11.3474 7.52858 11.3474C7.52858 11.3474 7.20891 10.7128 7.20891 9.77644C7.20891 8.3031 8.06135 7.20253 9.12689 7.20253C10.0326 7.20253 10.4677 7.88151 10.4677 8.69362C10.4677 9.60337 9.88609 10.9613 9.58863 12.2217C9.34 13.2779 10.117 14.1343 11.1603 14.1343C13.0428 14.1343 14.3125 11.7158 14.3125 8.84894C14.3125 6.66999 12.843 5.04132 10.1747 5.04132C7.16008 5.04132 5.27761 7.29128 5.27761 9.80307C5.27761 10.6684 5.53512 11.2808 5.9347 11.7513C6.11673 11.9687 6.14337 12.0575 6.07677 12.306C6.02794 12.4879 5.92138 12.9273 5.87254 13.1048C5.80595 13.3577 5.60172 13.4465 5.37529 13.3533C3.98564 12.7853 3.33744 11.2675 3.33744 9.55455C3.33744 6.73212 5.72159 3.34609 10.4455 3.34609C14.2415 3.34609 16.7411 6.09308 16.7411 9.03977C16.7411 12.9406 14.57 15.8518 11.3734 15.8518C10.299 15.8518 9.29116 15.2704 8.94486 14.6136C8.94486 14.6136 8.36769 16.9035 8.24338 17.3473C8.03471 18.115 7.62181 18.8783 7.24443 19.4774C8.15986 19.7474 9.10925 19.8849 10.0637 19.8857C15.5557 19.8857 20.0088 15.4346 20.0088 9.94508C20.0088 4.45554 15.5601 0 10.0681 0Z" fill="currentColor"></path>
+                                </svg>                                            
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  END FOOTER SECTION HERE  -->
+    
+
+
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  
+</body>
+
+</html>
