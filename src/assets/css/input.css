@@ -117,16 +117,16 @@ html {
     @apply bg-darkblue-700
   }
  :root{
-    --secondary-font:"outfit", sans-serif;
-    --primary-font:"Cormorant Garamond", sans-serif;
-    --h1: normal normal 700 65px/74px var(--primary-font);
-    --h2: normal normal 700 65px/74px var(--primary-font);
-    --h3: normal normal 700 45px/52px var(--primary-font);
-    --h4: normal normal 700 40px/46px var(--primary-font);
-    --h5: normal normal 700 35px/40px var(--primary-font);
-    --h6: normal normal 700 30px/34px var(--primary-font);
-    --p: normal normal 400 20px/28px var(--secondary-font);
-    --fs22: normal normal 400 20px/28px var(--secondary-font);
+  --secondary-font:"outfit", sans-serif;
+  --primary-font:"Cormorant Garamond", sans-serif;
+  --h1: normal normal 700 65px/74px var(--primary-font);
+  --h2: normal normal 700 65px/74px var(--primary-font);
+  --h3: normal normal 700 45px/52px var(--primary-font);
+  --h4: normal normal 700 40px/46px var(--primary-font);
+  --h5: normal normal 700 35px/40px var(--primary-font);
+  --h6: normal normal 700 30px/34px var(--primary-font);
+  --p: normal normal 400 20px/28px var(--secondary-font);
+  --fs22: normal normal 400 20px/28px var(--secondary-font);
  }
   h1,.h1{font: var(--h1); @apply text-white}
   h2,.h2{font:var(--h2); @apply text-white}
