@@ -39,6 +39,12 @@ module.exports = {
         'md': '768px',  
         'sm': '576px',
       }, 
+      keyframes: {
+        lineTopBottom: {
+          '0%': { top: '0', opacity: '100%',  },
+          '100%': { top: '100%',  height: '300px', opacity: '100%'},
+        }
+      }
     },
   },
   plugins: [],
