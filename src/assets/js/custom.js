@@ -63,4 +63,32 @@ $(document).ready(function(){
             let num = index+1
             $(this).css('top',`${num*30}px`)  ;
         })
+        
+        const addAnimationLine = (lineCunt) => {  
+            for(let i=1; i<= lineCunt; i++) {
+                let delayNum = Math.random() * 2;
+                var html = `<div class="animationLine after:animate-[lineTopBottom_3s_linear_1.8s_infinite]" style="--delay:${delayNum.toFixed(2)}s"></div>`
+
+                $('#lineAnimationWrapper').append(html)
+            }
+        }   
+        const screenWidth = $(window).width();
+        
+        if(screenWidth < 575){
+            addAnimationLine(4) 
+        }else if(screenWidth < 767){
+            addAnimationLine(5) 
+            
+        }else if(screenWidth < 991){
+            addAnimationLine(6) 
+            
+        }else if(screenWidth < 1400){
+            addAnimationLine(7) 
+            
+        }else{
+            addAnimationLine(9) 
+        } 
+
+    
+        
 })

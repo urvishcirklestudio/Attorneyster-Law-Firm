@@ -760,13 +760,37 @@ p{
   left: 50%;
   height: 30px;
   width: 2px;
+  content: var(--tw-content);
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes lineTopBottom {
+  0% {
+    content: var(--tw-content);
+    top: 0;
+    opacity: 100%;
+  }
+
+  100% {
+    content: var(--tw-content);
+    top: 100%;
+    height: 300px;
+    opacity: 100%;
+  }
+}
+
+.animationLine::after {
+  animation: lineTopBottom 3s linear infinite;
   border-radius: 60px;
   --tw-bg-opacity: 1;
   background-color: rgb(209 176 107 / var(--tw-bg-opacity));
   content: var(--tw-content);
   opacity: 0;
+}
+
+.animationLine:after{
+  animation-delay: var(--delay) !important;
 }
 
 @media screen and (max-width: 1365px) {
@@ -2195,44 +2219,8 @@ p{
   font-size: 20px;
 }
 
-.text-\[400px\] {
-  font-size: 400px;
-}
-
-.text-\[190px\] {
-  font-size: 190px;
-}
-
-.text-\[100px\] {
-  font-size: 100px;
-}
-
-.text-\[10vw\] {
-  font-size: 10vw;
-}
-
-.text-\[100vw\] {
-  font-size: 100vw;
-}
-
-.text-\[30vw\] {
-  font-size: 30vw;
-}
-
-.text-\[34vw\] {
-  font-size: 34vw;
-}
-
-.text-\[40vw\] {
-  font-size: 40vw;
-}
-
 .text-\[35vw\] {
   font-size: 35vw;
-}
-
-.font-\[400px\] {
-  font-weight: 400px;
 }
 
 .font-bold {
@@ -3069,10 +3057,6 @@ p{
     text-align: start;
   }
 
-  .sm\:text-\[180px\] {
-    font-size: 180px;
-  }
-
   .sm\:font-medium {
     font-weight: 500;
   }
@@ -3310,10 +3294,6 @@ p{
 
   .md\:mt-\[8px\] {
     margin-top: 8px;
-  }
-
-  .md\:mb-\[4px\] {
-    margin-bottom: 4px;
   }
 
   .md\:block {
@@ -3819,12 +3799,12 @@ p{
     font-size: 18px;
   }
 
-  .md\:text-\[26px\] {
-    font-size: 26px;
-  }
-
   .md\:text-\[260px\] {
     font-size: 260px;
+  }
+
+  .md\:text-\[26px\] {
+    font-size: 26px;
   }
 
   .md\:before\:block::before {
@@ -3932,6 +3912,10 @@ p{
 
   .lg\:mb-\[30px\] {
     margin-bottom: 30px;
+  }
+
+  .lg\:mb-\[34px\] {
+    margin-bottom: 34px;
   }
 
   .lg\:mb-\[36px\] {
@@ -4052,14 +4036,6 @@ p{
 
   .lg\:mt-\[90px\] {
     margin-top: 90px;
-  }
-
-  .lg\:mb-\[8px\] {
-    margin-bottom: 8px;
-  }
-
-  .lg\:mb-\[34px\] {
-    margin-bottom: 34px;
   }
 
   .lg\:block {
@@ -5301,22 +5277,6 @@ p{
 
   .xl\:text-\[400px\] {
     font-size: 400px;
-  }
-
-  .xl\:text-\[30vw\] {
-    font-size: 30vw;
-  }
-
-  .xl\:text-\[20vw\] {
-    font-size: 20vw;
-  }
-
-  .xl\:text-\[22vw\] {
-    font-size: 22vw;
-  }
-
-  .xl\:text-\[21vw\] {
-    font-size: 21vw;
   }
 
   .xl\:first\:after\:mt-\[80px\]:first-child::after {

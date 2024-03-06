@@ -152,8 +152,11 @@ html {
     @apply object-cover absolute top-0 left-0 h-full w-full
   }
 
-  .animationLine{
-    @apply h-full overflow-hidden opacity-50 w-px bg-darkblue-600 relative after:absolute after:top-0 after:left-2/4 after:translate-x-[-50%] after:w-[2px] after:h-[30px] after:rounded-[60px] after:bg-highLight after:opacity-0
+  .animationLine{ 
+    @apply h-full overflow-hidden opacity-50 w-px bg-darkblue-600 relative after:absolute after:top-0 after:left-2/4 after:translate-x-[-50%] after:w-[2px] after:h-[30px] after:rounded-[60px] after:bg-highLight after:opacity-0 after:animate-[lineTopBottom_3s_linear_infinite];
+  }
+  .animationLine:after{
+    animation-delay: var(--delay) !important;
   }
   
   @media screen and (max-width: 1365px) {
